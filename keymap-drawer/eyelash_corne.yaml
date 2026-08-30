@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: \, h: Mod}
   - $$mdi:apple-keyboard-option$$
-  - {t: INT MUHENKAN, h: MOVE}
+  - {t: INTERNATIONAL 5, h: MOVE}
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
-  - {t: INT HENKAN, h: SYMBOL}
+  - {t: INTERNATIONAL 4, h: SYMBOL}
   - {t: MOUSE, h: toggle}
   MOVE:
   - $$mdi:keyboard-esc$$
@@ -96,8 +96,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - INT MUHENKAN
-  - INT HENKAN
+  - INTERNATIONAL 5
+  - INTERNATIONAL 4
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
@@ -292,7 +292,7 @@ layers:
   - GAME_NUM
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
-  - {t: INT HENKAN, h: SYMBOL}
+  - {t: INTERNATIONAL 4, h: SYMBOL}
   - $$mdi:apple-keyboard-option$$
   GAME_NUM:
   - $$mdi:keyboard-esc$$
@@ -341,7 +341,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - INT MUHENKAN
+  - INTERNATIONAL 5
   - {t: GAME_QWERTY, h: toggle}
   Mod:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -356,7 +356,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - VOLUME UP
+  - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -370,15 +370,15 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - MUTE
-  - VOLUME DOWN
+  - $$mdi:volume-off$$
+  - $$mdi:volume-low$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - MUTE
+  - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
