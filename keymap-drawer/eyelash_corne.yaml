@@ -96,8 +96,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - LANG1
-  - LANG2
+  - INTERNATIONAL 5
+  - INTERNATIONAL 4
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
