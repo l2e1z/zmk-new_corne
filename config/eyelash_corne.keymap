@@ -52,10 +52,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U                  &kp I      &kp O    &kp P     &kp AT_SIGN
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K      &kp L    &kp SEMI  &kp COLON
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                  &kp COMMA  &kp DOT  &kp FSLH  &lt 7 NON_US_BACKSLASH
-                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &to 8
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I      &kp O    &kp P     &kp AT_SIGN
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K      &kp L    &kp SEMI  &kp COLON
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &lt 7 NON_US_BACKSLASH
+                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 LANG2  &to 8
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -64,10 +64,10 @@
         lower_layer {
             display-name = "MOVE";
             bindings = <
-&kp ESC  &none            &kp DEL         &kp UP        &kp BACKSPACE    &kp ENTER                                     &mmv MOVE_UP                     &kp LC(LEFT)      &kp LC(RIGHT_ARROW)  &kp UP_ARROW         &kp BACKSPACE  &none              &kp BSPC
-&trans   &kp HOME         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp END                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none             &kp LEFT             &kp DOWN             &kp RIGHT      &kp ENTER          &kp PG_UP
-&trans   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &mkp MCLK     &msc SCRL_UP     &msc SCRL_DOWN  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(LC(LEFT))  &kp LS(LEFT)         &none                &kp LS(RIGHT)  &kp LS(LC(RIGHT))  &kp PG_DN
-                                          &kp LEFT_WIN  &trans           &kp ENTER                                                                      &kp SPACE         &kp INTERNATIONAL_5  &kp INTERNATIONAL_4
+&kp ESC  &none            &kp DEL         &kp UP        &kp BACKSPACE    &kp ENTER                                     &mmv MOVE_UP                     &kp LC(LEFT)      &kp LC(RIGHT_ARROW)  &kp UP_ARROW  &kp BACKSPACE  &none              &kp BSPC
+&trans   &kp HOME         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp END                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none             &kp LEFT             &kp DOWN      &kp RIGHT      &kp ENTER          &kp PG_UP
+&trans   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &mkp MCLK     &msc SCRL_UP     &msc SCRL_DOWN  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(LC(LEFT))  &kp LS(LEFT)         &none         &kp LS(RIGHT)  &kp LS(LC(RIGHT))  &kp PG_DN
+                                          &kp LEFT_WIN  &trans           &kp ENTER                                                                      &kp SPACE         &kp LANG1            &kp LANG2
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
