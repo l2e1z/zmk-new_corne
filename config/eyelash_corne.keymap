@@ -44,6 +44,18 @@
 
             tapping-term-ms = <200>;
         };
+
+        // 既存の &lt の挙動自体をホールド優先に上書き
+        lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&mo>, <&kp>;
+        };
+
     };
 
     combos {
