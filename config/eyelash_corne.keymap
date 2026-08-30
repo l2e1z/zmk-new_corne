@@ -144,11 +144,13 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &none           &kp BACKSPACE
+&none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW    &none
+&kp LS(BACKSPACE)  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0  &none                    &msc SCRL_DOWN                   &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MCLK       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT
+                                   &kp MINUS  &kp FSLH  &none                                                             &none           &none            &to 0
             >;
+
+            label = "MOUSE";
         };
     };
 };
