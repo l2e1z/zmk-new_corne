@@ -14,6 +14,11 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
+    &lt {
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
+    };
+
     behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
