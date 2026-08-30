@@ -35,6 +35,15 @@
             #sensor-binding-cells = <0>;
             tap-ms = <0>;
         };
+
+        td_to_layer8: td_to_layer8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TO_LAYER8";
+            #binding-cells = <0>;
+            bindings = <&none>, <&to 8>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -57,10 +66,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I      &kp O    &kp P     &kp AT_SIGN
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K      &kp L    &kp SEMI  &kp COLON
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &lt 7 NON_US_BACKSLASH
-                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &lt 2 SPACE  &to 8
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I          &kp O    &kp P     &kp AT_SIGN
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp COLON
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &lt 7 NON_US_BACKSLASH
+                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 SPACE  &td_to_layer8
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -72,7 +81,7 @@
 &kp ESC  &kp HOME         &kp DEL         &kp UP        &kp BACKSPACE    &kp END                                       &mmv MOVE_UP                     &kp LC(LEFT)      &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &kp BACKSPACE  &none              &kp BSPC
 &trans   &kp HOME         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME          &kp LEFT             &kp DOWN        &kp RIGHT      &kp ENTER          &kp END
 &trans   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &mkp MCLK     &msc SCRL_UP     &msc SCRL_DOWN  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(LC(LEFT))  &kp LS(LEFT)         &none           &kp LS(RIGHT)  &kp LS(LC(RIGHT))  &none
-                                          &kp LEFT_WIN  &trans           &kp ENTER                                                                      &kp SPACE         &kp INT_MUHENKAN     &kp INT_HENKAN
+                                          &kp LEFT_WIN  &trans           &kp ENTER                                                                      &kp ENTER         &kp INT_MUHENKAN     &kp INT_HENKAN
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
