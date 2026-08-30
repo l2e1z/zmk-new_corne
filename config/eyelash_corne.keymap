@@ -69,10 +69,10 @@
         lower_layer {
             display-name = "MOVE";
             bindings = <
-&kp ESC  &kp HOME         &kp DEL         &kp UP        &kp BACKSPACE    &kp END                                       &mmv MOVE_UP                     &kp LC(LEFT)      &kp LC(RIGHT_ARROW)  &kp UP_ARROW  &kp BACKSPACE  &none              &kp BSPC
-&trans   &kp HOME         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME          &kp LEFT             &kp DOWN      &kp RIGHT      &kp ENTER          &kp END
-&trans   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &mkp MCLK     &msc SCRL_UP     &msc SCRL_DOWN  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(LC(LEFT))  &kp LS(LEFT)         &none         &kp LS(RIGHT)  &kp LS(LC(RIGHT))  &none
-                                          &kp LEFT_WIN  &trans           &kp ENTER                                                                      &kp SPACE         &kp LANG1            &kp LANG2
+&kp ESC  &kp HOME         &kp DEL         &kp UP        &kp BACKSPACE    &kp END                                       &mmv MOVE_UP                     &kp LC(LEFT)      &kp LC(RIGHT_ARROW)  &kp UP_ARROW         &kp BACKSPACE  &none              &kp BSPC
+&trans   &kp HOME         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME          &kp LEFT             &kp DOWN             &kp RIGHT      &kp ENTER          &kp END
+&trans   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &mkp MCLK     &msc SCRL_UP     &msc SCRL_DOWN  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(LC(LEFT))  &kp LS(LEFT)         &none                &kp LS(RIGHT)  &kp LS(LC(RIGHT))  &none
+                                          &kp LEFT_WIN  &trans           &kp ENTER                                                                      &kp SPACE         &kp INTERNATIONAL_5  &kp INTERNATIONAL_4
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
