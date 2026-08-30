@@ -63,7 +63,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I          &kp O    &kp P     &kp AT_SIGN
@@ -75,7 +75,7 @@
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        lower_layer {
+        MOVE_LAYER {
             display-name = "MOVE";
             bindings = <
 &kp ESC  &kp HOME         &kp DEL         &kp UP        &kp BACKSPACE    &kp END                                       &mmv MOVE_UP                     &kp LC(LEFT)      &kp LC(RIGHT_ARROW)  &kp UP_ARROW    &kp BACKSPACE  &none              &kp BSPC
@@ -87,19 +87,19 @@
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        raise_layer {
+        SYMBOL_LAYER {
             display-name = "SYMBOL";
             bindings = <
 &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL   &kp GRAVE  &kp TILDE                                    &mmv MOVE_UP                     &kp CARET         &kp UNDERSCORE        &kp MINUS      &none             &kp PERCENT            &kp BSPC
 &trans  &kp AMPERSAND     &kp HASH           &kp DOLLAR  &none      &kp LEFT_BRACKET             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET
-&trans  &none             &none              &none       &none      &kp RIGHT_BRACKET  &trans                    &mmv MOVE_DOWN                   &kp UNDER         &kp PLUS              &kp LBRC       &kp RBRC          &kp PIPE               &kp NON_US_BACKSLASH
+&trans  &none             &kp EXCL           &none       &none      &kp RIGHT_BRACKET  &trans                    &mmv MOVE_DOWN                   &kp UNDER         &kp PLUS              &kp LBRC       &kp RBRC          &kp PIPE               &kp NON_US_BACKSLASH
                                              &trans      &trans     &kp SPACE                                                                     &kp RET           &trans                &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        layer_3 {
+        NUM_LAYER {
             display-name = "Fn&NUM";
             bindings = <
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6         &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
@@ -111,7 +111,7 @@
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        layer_4 {
+        SYSTEM_LAYER {
             display-name = "SYSTEM";
             bindings = <
 &none  &none         &none         &bootloader   &sys_reset    &bt BT_CLR_ALL                       &none         &sys_reset       &none            &none            &none            &rgb_ug RGB_OFF  &rgb_ug RGB_ON
@@ -123,7 +123,7 @@
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
-        layer_5 {
+        GAME_QWERTY {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y        &kp U                  &kp I          &kp O    &kp P     &kp AT
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K          &kp L    &kp SEMI  &kp COLON
@@ -134,7 +134,7 @@
             label = "GAME_QWERTY";
         };
 
-        layer_6 {
+        GAME_NUM {
             bindings = <
 &kp ESC           &trans  &trans  &trans  &trans  &trans                    &trans          &trans    &trans               &trans  &trans  &trans  &trans
 &trans            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &trans  &trans  &kp BSPC  &trans               &trans  &trans  &trans  &trans
@@ -145,7 +145,7 @@
             label = "GAME_NUM";
         };
 
-        layer_7 {
+        MOD_LAYER {
             bindings = <
 &none  &none  &none  &none  &none  &none                       &none         &kp LC(LA(DELETE))  &none  &none  &none  &none       &kp C_VOLUME_UP
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none               &none  &none  &none  &kp C_MUTE  &kp C_VOL_DN
@@ -156,7 +156,7 @@
             label = "Mod";
         };
 
-        layer_8 {
+        MOUSE_LAYER {
             bindings = <
 &kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &none           &kp BACKSPACE
 &none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW    &none
