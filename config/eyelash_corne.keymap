@@ -133,11 +133,13 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none                       &none         &none  &none  &none  &none  &none       &kp K_VOLUME_UP
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none  &none  &kp K_MUTE  &kp K_VOLUME_DOWN
+&none  &none  &none  &none  &none  &none  &kp K_MUTE           &none         &none  &none  &none  &none  &none       &none
+                     &none  &none  &to 0                                     &to 4  &none  &to 5
             >;
+
+            label = "Mod";
         };
 
         layer_8 {
