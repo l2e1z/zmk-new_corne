@@ -46,16 +46,16 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - MOVE
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
-  - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
-  - {t: LANG2, h: SYMBOL}
+  - {t: '$$mdi:keyboard-return$$', h: Fn&NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: MOUSE, h: toggle}
   MOVE:
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - HOME
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - END
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Ctl+$$mdi:arrow-left-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
@@ -68,16 +68,16 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - END
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - PG UP
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON
@@ -91,7 +91,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Sft+$$mdi:arrow-right-bold$$
   - Sft+Ctl+$$mdi:arrow-right-bold$$
-  - PG DN
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LEFT WIN
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -351,7 +351,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+Alt+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -444,3 +444,5 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+- p: [0, 13, 28, 43]
+  k: Sft+Ctl+$$mdi:keyboard-esc$$
