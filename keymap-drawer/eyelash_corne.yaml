@@ -96,8 +96,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - INTERNATIONAL 5
-  - INTERNATIONAL 4
+  - INT MUHENKAN
+  - INT HENKAN
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
