@@ -52,10 +52,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R                  &kp T                               &kp UP                &kp Y        &kp U                  &kp I      &kp O    &kp P     &kp AT_SIGN
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F                  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K      &kp L    &kp SEMI  &kp COLON
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V                  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                  &kp COMMA  &kp DOT  &kp FSLH  &lt 7 NON_US_BACKSLASH
-                              &kp LEFT_ALT  &lt 1 INTERNATIONAL_5  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &to 8
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U                  &kp I      &kp O    &kp P     &kp AT_SIGN
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K      &kp L    &kp SEMI  &kp COLON
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                  &kp COMMA  &kp DOT  &kp FSLH  &lt 7 NON_US_BACKSLASH
+                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &to 8
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
