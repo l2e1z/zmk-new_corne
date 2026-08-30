@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - {t: \, h: Mod}
   - $$mdi:apple-keyboard-option$$
-  - {t: INTERNATIONAL 5, h: MOVE}
+  - MOVE
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: INTERNATIONAL 4, h: SYMBOL}
