@@ -46,9 +46,9 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - MOVE
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
-  - {t: '$$mdi:keyboard-return$$', h: Fn&NUM}
+  - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: MOUSE, h: toggle}
+  - '&td_to_layer8'
   MOVE:
   - $$mdi:keyboard-esc$$
   - HOME
@@ -95,7 +95,7 @@ layers:
   - LEFT WIN
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - INT MUHENKAN
   - INT HENKAN
   SYMBOL:
