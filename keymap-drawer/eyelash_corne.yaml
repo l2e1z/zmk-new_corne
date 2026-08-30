@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
