@@ -111,11 +111,13 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y        &kp U             &kp I          &kp O    &kp P     &kp AT
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J             &kp K          &kp L    &kp SEMI  &kp COLON
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N        &kp M             &kp COMMA      &kp DOT  &kp FSLH  &kp BSLH
+                         &kp LALT  &mo 6  &kp SPACE                                               &lt 3 SPACE  &lt 2 INT_HENKAN  &kp RIGHT_ALT
             >;
+
+            label = "GAME_QWERTY";
         };
 
         layer_6 {
