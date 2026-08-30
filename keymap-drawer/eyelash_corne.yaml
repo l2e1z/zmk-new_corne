@@ -47,7 +47,7 @@ layers:
   - MOVE
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
-  - {t: INTERNATIONAL 4, h: SYMBOL}
+  - {t: LANG2, h: SYMBOL}
   - {t: MOUSE, h: toggle}
   MOVE:
   - $$mdi:keyboard-esc$$
@@ -96,8 +96,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - INTERNATIONAL 5
-  - INTERNATIONAL 4
+  - LANG1
+  - LANG2
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
