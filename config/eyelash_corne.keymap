@@ -29,7 +29,7 @@
         to_l0_off: to_l0_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &rgb_ug RGB_OFF>;
+            bindings = <&to 0 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0, 0, 50) &macro_wait_time 3000 &rgb_ug RGB_OFF>;
         };
 
         // レイヤー7(通常)に戻り、LEDをOFFにする
@@ -47,7 +47,7 @@
             #binding-cells = <0>;
             bindings =
                 <&to 5 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(240, 100, 50)>,
-                <&macro_wait_time 1000>,
+                <&macro_wait_time 5000>,
                 <&rgb_ug RGB_OFF>;
         };
 
@@ -68,8 +68,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&to 8 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(25, 100, 50)>,
-                <&macro_wait_time 1000>,
+                <&to 8 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(10, 100, 50)>,
+                <&macro_wait_time 3000>,
                 <&rgb_ug RGB_OFF>;
         };
     };
