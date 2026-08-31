@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - '@'
+  - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -28,7 +28,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - ':'
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: \, h: Mod}
+  - {t: INT YEN, h: Mod}
   - $$mdi:apple-keyboard-option$$
   - MOVE
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
@@ -100,47 +100,47 @@ layers:
   - INT HENKAN
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
-  - '"'
-  - {t: '=', s: +}
-  - {t: '`', s: '~'}
-  - '~'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
+  - '&'
+  - '@'
   - _
+  - '{'
+  - {t: Sft+=, s: Sft++}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '=', s: +}
+  - Sft+INTERNATIONAL 3
   - {t: '-', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '%'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&'
+  - ^
   - '#'
   - $
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '[', s: '{'}
-  - (
+  - {t: ']', s: '}'}
+  - '*'
   - <
   - '>'
-  - )
-  - {t: ']', s: '}'}
+  - (
+  - '#'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - _
   - +
-  - '{'
-  - '}'
-  - '|'
-  - \
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - Sft+#
+  - Sft+INTERNATIONAL 1
+  - Sft+INT YEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
