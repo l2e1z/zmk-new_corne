@@ -46,16 +46,6 @@
         };
 
         // 既存の &lt の挙動自体をホールド優先に上書き
-        lt: layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            bindings = <&mo>, <&kp>;
-        };
-
     };
 
     combos {
@@ -78,9 +68,9 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I          &kp O    &kp P     &kp AT_SIGN
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp COLON
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &lt 7 NON_US_BACKSLASH
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I          &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &lt 7 INT_YEN
                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 SPACE  &td_to_layer8
             >;
 
@@ -102,10 +92,10 @@
         SYMBOL_LAYER {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL   &kp GRAVE  &kp TILDE                                    &mmv MOVE_UP                     &kp CARET         &kp UNDERSCORE        &kp MINUS      &none             &kp PERCENT            &kp BSPC
-&trans  &kp AMPERSAND     &kp HASH           &kp DOLLAR  &none      &kp LEFT_BRACKET             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET
-&trans  &none             &kp EXCL           &none       &none      &kp RIGHT_BRACKET  &trans                    &mmv MOVE_DOWN                   &kp UNDER         &kp PLUS              &kp LBRC       &kp RBRC          &kp PIPE               &kp NON_US_BACKSLASH
-                                             &trans      &trans     &kp SPACE                                                                     &kp RET           &trans                &trans
+&trans  &kp AMPERSAND  &kp AT    &kp UNDER   &kp LEFT_BRACE  &kp LS(EQUAL)                                &mmv MOVE_UP                     &kp EQUAL          &kp LS(INTERNATIONAL_3)  &kp MINUS              &none                &kp PERCENT              &kp BSPC
+&trans  &kp CARET      &kp HASH  &kp DOLLAR  &none           &kp RIGHT_BRACKET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp ASTRK                &kp LESS_THAN          &kp GREATER_THAN     &kp LEFT_PARENTHESIS     &kp NON_US_HASH
+&trans  &none          &kp EXCL  &none       &kp BACKSLASH   &kp BACKSLASH      &trans                    &mmv MOVE_DOWN                   &kp UNDER          &kp PLUS                 &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(INTERNATIONAL_1)  &kp LS(INT_YEN)
+                                 &trans      &trans          &kp SPACE                                                                     &kp RET            &trans                   &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
