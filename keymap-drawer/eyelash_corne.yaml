@@ -287,7 +287,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: \, s: '|'}
+  - {t: INTERNATIONAL 3, h: Mod}
   - $$mdi:apple-keyboard-option$$
   - GAME_NUM
   - $$mdi:keyboard-space$$
@@ -302,7 +302,7 @@ layers:
   - '4'
   - {t: '5', s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&to_l0_off'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -336,7 +336,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&to_l0_off'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -380,7 +380,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&to_l0_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -390,7 +390,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: QWERTY, h: toggle}
   - '&to_l4_red'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&to_l0_off'
   - {t: GAME_QWERTY, h: toggle}
   MOUSE:
   - $$mdi:keyboard-tab$$
