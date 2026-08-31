@@ -107,7 +107,7 @@ layers:
   - {t: Sft+=, s: Sft++}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '=', s: +}
-  - Sft+INTERNATIONAL 3
+  - Sft+INTERNATIONAL 1
   - {t: '-', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '%'
@@ -131,7 +131,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: \, s: '|'}
+  - INTERNATIONAL 3
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -139,7 +139,7 @@ layers:
   - +
   - {t: 'Sft+]', s: 'Sft+}'}
   - Sft+#
-  - Sft+INTERNATIONAL 1
+  - Sft+INTERNATIONAL 3
   - Sft+INT YEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
