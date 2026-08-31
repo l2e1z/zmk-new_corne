@@ -1,6 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
-
 #define COLOR_RED RGB_COLOR_HSB(0, 100, 50)
 
 #include <input/processors.dtsi>
@@ -18,6 +17,7 @@
 / {
     macros {
         // レイヤー4へ移動し、LEDをONにして赤くする
+
         to_l4_red: to_l4_red {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -25,12 +25,15 @@
         };
 
         // レイヤー0(通常)に戻り、LEDをOFFにする
+
         to_l0_off: to_l0_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0 &rgb_ug RGB_OFF>;
         };
+
         // レイヤー7(通常)に戻り、LEDをOFFにする
+
         to_l7_off: to_l7_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -70,6 +73,7 @@
         };
 
         // 既存の &lt の挙動自体をホールド優先に上書き
+
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP";
@@ -152,7 +156,7 @@
 &none  &none         &none         &bootloader   &sys_reset    &bt BT_CLR_ALL                       &none         &sys_reset       &none            &none            &none            &rgb_ug RGB_OFF  &rgb_ug RGB_ON
 &none  &bt BT_NXT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &none  &none  &none  &bootloader      &none            &none            &none            &rgb_ug RGB_SPI  &rgb_ug RGB_BRI
 &none  &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &bt BT_CLR      &kp C_MUTE           &none         &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD
-                                   &none         &none         &to 0                                              &to 7            &none            &none
+                                   &none         &none         &to_l0_off                                         &to_l7_off       &none            &none
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -185,7 +189,7 @@
 &none  &none  &none  &none  &none  &none                       &none         &kp LC(LA(DELETE))  &none  &none  &none  &none       &kp C_VOLUME_UP
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none               &none  &none  &none  &kp C_MUTE  &kp C_VOL_DN
 &none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none               &none  &none  &none  &none       &none
-                     &none  &none  &to 0                                     &to 4               &none  &to 5
+                     &none  &none  &to 0                                     &to_l4_red          &none  &to 5
             >;
 
             label = "Mod";
