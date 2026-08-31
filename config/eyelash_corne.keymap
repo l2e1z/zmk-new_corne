@@ -111,11 +111,6 @@
     combos {
         compatible = "zmk,combos";
 
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <>;
-        };
-
         task_manager {
             bindings = <&kp LS(LC(ESCAPE))>;
             key-positions = <0 13 28 43>;
