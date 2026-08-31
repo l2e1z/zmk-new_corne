@@ -177,10 +177,10 @@
         GAME_NUM {
             display-name = "GAME_NUM";
             bindings = <
-&kp ESC           &trans  &trans  &trans  &trans  &trans                    &trans          &trans    &trans               &trans  &trans  &trans  &trans
-&trans            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &trans  &trans  &kp BSPC  &trans               &trans  &trans  &trans  &trans
-&kp INT_MUHENKAN  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans            &trans          &trans    &trans               &trans  &trans  &trans  &trans
-                                  &trans  &trans  &trans                                    &trans    &kp INTERNATIONAL_5  &to 5
+&kp ESC  &kp N2  &kp NUMBER_3  &trans  &kp NUMBER_4  &kp N5                    &trans          &to_l0_off  &trans               &trans          &trans  &trans  &trans
+&trans   &kp N1  &trans        &trans  &trans        &trans            &trans  &trans  &trans  &kp BSPC    &trans               &trans          &trans  &trans  &trans
+&trans   &trans  &kp N7        &kp N8  &kp N9        &kp N0  &trans            &trans          &trans      &trans               &trans          &trans  &trans  &trans
+                               &trans  &trans        &trans                                    &trans      &kp INTERNATIONAL_5  &kp INT_HENKAN
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
