@@ -52,10 +52,10 @@
             #binding-cells = <0>;
             bindings =
                 <&to 5>,
-                <&rgb_ug RGB_COLOR_HSB(240, 100, 50)>,
-                <&rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(240, 100, 50)>,
+                <&macro_tap &rgb_ug RGB_ON>,
                 <&macro_wait_time 5000>,
-                <&rgb_ug RGB_OFF>;
+                <&macro_tap &rgb_ug RGB_OFF>;
         };
 
         // 【追加】レイヤー7へ移動し、LEDをONにして紫にする（1秒後に自動消灯）
