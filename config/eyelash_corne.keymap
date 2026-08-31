@@ -21,10 +21,7 @@
         to_l4_red: to_l4_red {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-                <&to 4>,
-                <&rgb_ug COLOR_RED>,
-                <&rgb_ug RGB_ON>;
+            bindings = <&to 4 &rgb_ug COLOR_RED &rgb_ug RGB_ON>;
         };
 
         // レイヤー0(通常)に戻り、LEDをOFFにする
@@ -32,27 +29,27 @@
         to_l0_off: to_l0_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&to 0>,
-                <&rgb_ug RGB_OFF>;
+            bindings = <&to 0 &rgb_ug RGB_OFF>;
         };
 
         // 【追加】レイヤー5へ移動し、LEDをONにして青くする（1秒後に自動消灯）
+
         to_l5_blue: to_l5_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =<&to 5>;
+            bindings = <&to 5>;
         };
 
         // 【追加】レイヤー7へ移動し、LEDをONにして紫にする（1秒後に自動消灯）
+
         to_l7_purple: to_l7_purple {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&to 7>;
-                // <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(290, 100, 50)>,
-                // <&macro_wait_time 1000>,
-                // <&rgb_ug RGB_OFF>;
+            bindings = <&to 7>;
+
+            // <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(290, 100, 50)>,
+            // <&macro_wait_time 1000>,
+            // <&rgb_ug RGB_OFF>;
         };
 
         // 【追加】レイヤー8へ移動し、LEDをONにしてオレンジにする（1秒後に自動消灯）
@@ -60,12 +57,10 @@
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&to 8>,
-                <&rgb_ug RGB_COLOR_HSB(10, 100, 50)>,
-                <&rgb_ug RGB_ON>;
-                // <&macro_wait_time 3000>,
-                // <&rgb_ug RGB_OFF>;
+            bindings = <&to 8 &rgb_ug RGB_COLOR_HSB(10, 100, 50) &rgb_ug RGB_ON>;
+
+            // <&macro_wait_time 3000>,
+            // <&rgb_ug RGB_OFF>;
         };
     };
 
@@ -184,7 +179,7 @@
 &none  &none         &none         &bootloader   &sys_reset    &bt BT_CLR_ALL                       &none         &sys_reset       &none            &none            &kp LC(V)        &rgb_ug RGB_OFF  &rgb_ug RGB_ON
 &none  &bt BT_NXT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &none  &none  &none  &bootloader      &none            &none            &none            &rgb_ug RGB_SPI  &rgb_ug RGB_BRI
 &none  &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &bt BT_CLR      &kp C_MUTE           &none         &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD
-                                   &none         &none         &to_l0_off                                         &to_l7_off       &none            &none
+                                   &none         &none         &to_l0_off                                         &to_l0_off       &none            &none
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
