@@ -207,7 +207,7 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+V
   - RGB OFF
   - RGB ON
   - {t: '$$mdi:minus-circle-outline$$', type: none}
