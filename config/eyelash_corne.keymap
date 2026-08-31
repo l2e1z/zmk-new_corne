@@ -29,7 +29,10 @@
         to_l0_off: to_l0_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0, 0, 50) &macro_wait_time 3000 &rgb_ug RGB_OFF>;
+            bindings =
+                <&to 0 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0, 0, 50)>,
+                <&macro_wait_time 3000>,
+                <&rgb_ug RGB_OFF>;
         };
 
         // レイヤー7(通常)に戻り、LEDをOFFにする
@@ -222,9 +225,9 @@
         MOD_LAYER {
             display-name = "Mod";
             bindings = <
-&none  &none  &none  &none  &none  &none                       &none         &kp LC(LA(DELETE))  &none       &none        &none  &none       &kp C_VOLUME_UP
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none               &none       &none        &none  &kp C_MUTE  &kp C_VOL_DN
-&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &to_l0_off          &none       &none        &none  &none       &none
+&none  &none  &none  &none  &none  &none                       &none         &kp LC(LA(DELETE))  &none       &none        &none  &none               &kp C_VOLUME_UP
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none               &none       &none        &none  &kp C_MUTE          &kp C_VOL_DN
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &to_l0_off          &none       &none        &none  &kp RC(LEFT_ARROW)  &none
                      &none  &none  &to 0                                     &to_l4_red          &to_l0_off  &to_l5_blue
             >;
 
