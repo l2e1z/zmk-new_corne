@@ -198,7 +198,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SYSTEM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&soft_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
@@ -442,7 +442,5 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&to_l0_off'
 combos:
-- p: [5, 17, 33]
-  k: '&soft_off'
 - p: [0, 13, 28, 43]
   k: Sft+Ctl+$$mdi:keyboard-esc$$
