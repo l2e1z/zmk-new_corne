@@ -163,6 +163,7 @@
         };
 
         GAME_QWERTY {
+            display-name = "GAME_QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y        &kp U                  &kp I          &kp O    &kp P     &kp AT
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K          &kp L    &kp SEMI  &kp COLON
@@ -170,10 +171,11 @@
                          &kp LALT  &mo 6  &kp SPACE                                               &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &kp RIGHT_ALT
             >;
 
-            label = "GAME_QWERTY";
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
         GAME_NUM {
+            display-name = "GAME_NUM";
             bindings = <
 &kp ESC           &trans  &trans  &trans  &trans  &trans                    &trans          &trans    &trans               &trans  &trans  &trans  &trans
 &trans            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &trans  &trans  &kp BSPC  &trans               &trans  &trans  &trans  &trans
@@ -181,10 +183,11 @@
                                   &trans  &trans  &trans                                    &trans    &kp INTERNATIONAL_5  &to 5
             >;
 
-            label = "GAME_NUM";
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
         MOD_LAYER {
+            display-name = "Mod";
             bindings = <
 &none  &none  &none  &none  &none  &none                       &none         &kp LC(LA(DELETE))  &none  &none  &none  &none       &kp C_VOLUME_UP
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none               &none  &none  &none  &kp C_MUTE  &kp C_VOL_DN
@@ -192,10 +195,11 @@
                      &none  &none  &to 0                                     &to_l4_red          &none  &to 5
             >;
 
-            label = "Mod";
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
         MOUSE_LAYER {
+            display-name = "MOUSE";
             bindings = <
 &kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &none           &kp BACKSPACE
 &none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW    &none
@@ -203,7 +207,7 @@
                                    &kp MINUS  &kp FSLH  &none                                                             &none           &none            &to 0
             >;
 
-            label = "MOUSE";
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
     };
 };
