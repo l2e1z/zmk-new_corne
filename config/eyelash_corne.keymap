@@ -113,7 +113,7 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <24 11 37>;
+            key-positions = <5 17 33>;
         };
 
         task_manager {
