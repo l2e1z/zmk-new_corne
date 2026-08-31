@@ -135,10 +135,10 @@
         MOVE_LAYER {
             display-name = "MOVE";
             bindings = <
-&kp ESC  &kp HOME         &kp DEL         &kp UP        &kp BACKSPACE    &kp END                                  &mmv MOVE_UP                     &mkp LCLK  &kp PG_UP         &kp UP_ARROW        &kp BACKSPACE  &none      &kp BSPC
-&trans   &kp RC(A)        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME   &kp LEFT          &kp DOWN            &kp RIGHT      &kp ENTER  &kp END
-&trans   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &mkp MCLK     &msc SCRL_UP     &kp RC(B)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RC(N)  &kp PAGE_DOWN     &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &none      &none
-                                          &kp LEFT_WIN  &trans           &kp ENTER                                                                 &kp ENTER  &kp INT_MUHENKAN  &kp INT_HENKAN
+&kp ESC  &kp HOME   &kp DEL         &kp UP        &kp BACKSPACE    &kp END                                  &mmv MOVE_UP                     &mkp LCLK  &kp PG_UP         &kp UP_ARROW        &kp BACKSPACE  &none      &kp BSPC
+&trans   &kp RC(A)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME   &kp LEFT          &kp DOWN            &kp RIGHT      &kp ENTER  &kp END
+&trans   &none      &none           &mkp MCLK     &msc SCRL_UP     &kp RC(B)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RC(N)  &kp PAGE_DOWN     &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &none      &none
+                                    &kp LEFT_WIN  &trans           &kp ENTER                                                                 &kp ENTER  &kp INT_MUHENKAN  &kp INT_HENKAN
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -223,6 +223,18 @@
 &none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW    &none
 &kp LS(BACKSPACE)  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0  &none                    &msc SCRL_DOWN                   &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MCLK       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT
                                    &kp MINUS  &kp FSLH  &none                                                             &none           &none            &to_l0_off
+            >;
+
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
+
+        ONEHAND_LAYER {
+            display-name = "Chill";
+            bindings = <
+&none  &none  &none  &none  &none  &none                       &none         &none      &none       &none   &none           &none         &kp BACKSPACE
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none       &none   &none           &kp UP_ARROW  &none
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &none       &none   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+                     &none  &none  &to 0                                     &kp ENTER  &to_l0_off  &trans
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
