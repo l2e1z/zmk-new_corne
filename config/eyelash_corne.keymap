@@ -113,7 +113,7 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <1 15 29>;
+            key-positions = <24 11 37>;
         };
 
         task_manager {
@@ -177,7 +177,7 @@
             display-name = "SYSTEM";
             bindings = <
 &none  &none         &none         &bootloader   &sys_reset    &bt BT_CLR_ALL                       &none         &sys_reset       &none            &none            &kp LC(V)        &rgb_ug RGB_OFF  &rgb_ug RGB_ON
-&none  &bt BT_NXT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &none  &none  &none  &bootloader      &none            &none            &none            &rgb_ug RGB_SPI  &rgb_ug RGB_BRI
+&none  &bt BT_NXT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &none  &none  &none  &bootloader      &none            &none            &soft_off        &rgb_ug RGB_SPI  &rgb_ug RGB_BRI
 &none  &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &bt BT_CLR      &kp C_MUTE           &none         &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD
                                    &none         &none         &to_l0_off                                         &to_l0_off       &none            &none
             >;
