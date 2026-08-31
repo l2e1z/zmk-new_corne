@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
+  - Ctl+A
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -83,10 +83,10 @@ layers:
   - RGB ON
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:pan-up$$
-  - $$mdi:pan-down$$
+  - Ctl+B
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+N
   - PgDn
   - Sft+$$mdi:arrow-left-bold$$
   - Sft+$$mdi:arrow-right-bold$$
