@@ -57,8 +57,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - END
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Ctl+$$mdi:arrow-left-bold$$
-  - Ctl+$$mdi:arrow-right-bold$$
+  - $$mdi:mouse-left-click-outline$$
+  - PG UP
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -86,11 +86,11 @@ layers:
   - $$mdi:pan-down$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Sft+Ctl+$$mdi:arrow-left-bold$$
-  - Sft+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgDn
+  - Sft+$$mdi:arrow-left-bold$$
   - Sft+$$mdi:arrow-right-bold$$
-  - Sft+Ctl+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LEFT WIN
   - {type: held}
