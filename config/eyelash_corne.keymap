@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_TO_LAYER8";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 8>;
+            bindings = <&none>, <&to_l8_orange>;
 
             tapping-term-ms = <200>;
         };
