@@ -41,24 +41,36 @@
         };
 
         // 【追加】レイヤー5へ移動し、LEDをONにして青くする（1秒後に自動消灯）
+
         to_l5_blue: to_l5_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 5 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(240, 100, 50) &macro_wait_time 1000 &rgb_ug RGB_OFF>;
+            bindings =
+                <&to 5 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(240, 100, 50)>,
+                <&macro_wait_time 1000>,
+                <&rgb_ug RGB_OFF>;
         };
 
         // 【追加】レイヤー7へ移動し、LEDをONにして紫にする（1秒後に自動消灯）
+
         to_l7_purple: to_l7_purple {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 7 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(290, 100, 50) &macro_wait_time 1000 &rgb_ug RGB_OFF>;
+            bindings =
+                <&to 7 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(290, 100, 50)>,
+                <&macro_wait_time 1000>,
+                <&rgb_ug RGB_OFF>;
         };
 
         // 【追加】レイヤー8へ移動し、LEDをONにしてオレンジにする（1秒後に自動消灯）
+
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 8 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(25, 100, 50) &macro_wait_time 1000 &rgb_ug RGB_OFF>;
+            bindings =
+                <&to 8 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(25, 100, 50)>,
+                <&macro_wait_time 1000>,
+                <&rgb_ug RGB_OFF>;
         };
     };
 
@@ -210,10 +222,10 @@
         MOD_LAYER {
             display-name = "Mod";
             bindings = <
-&none  &none  &none  &none  &none  &none                       &none         &kp LC(LA(DELETE))  &none       &none  &none  &none       &kp C_VOLUME_UP
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none               &none       &none  &none  &kp C_MUTE  &kp C_VOL_DN
-&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &to_l0_off          &none       &none  &none  &none       &none
-                     &none  &none  &to 0                                     &to_l4_red          &to_l0_off  &to 5
+&none  &none  &none  &none  &none  &none                       &none         &kp LC(LA(DELETE))  &none       &none        &none  &none       &kp C_VOLUME_UP
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none               &none       &none        &none  &kp C_MUTE  &kp C_VOL_DN
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &to_l0_off          &none       &none        &none  &none       &none
+                     &none  &none  &to 0                                     &to_l4_red          &to_l0_off  &to_l5_blue
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -225,7 +237,7 @@
 &kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &none           &kp BACKSPACE
 &none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW    &none
 &kp LS(BACKSPACE)  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0  &none                    &msc SCRL_DOWN                   &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MCLK       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT
-                                   &kp MINUS  &kp FSLH  &none                                                             &none           &none            &to 0
+                                   &kp MINUS  &kp FSLH  &none                                                             &none           &none            &to_l0_off
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
