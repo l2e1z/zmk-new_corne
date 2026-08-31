@@ -21,7 +21,10 @@
         to_l4_red: to_l4_red {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4 &rgb_ug RGB_ON &rgb_ug COLOR_RED>;
+            bindings = 
+                <&to 4>,
+                <&rgb_ug COLOR_RED>,
+                <&rgb_ug RGB_ON>;
         };
 
         // レイヤー0(通常)に戻り、LEDをOFFにする
@@ -31,42 +34,25 @@
             #binding-cells = <0>;
             bindings =
                 <&to 0>,
-                <&rgb_ug RGB_COLOR_HSB(0, 0, 50)>,
-                <&rgb_ug RGB_ON>,
-                <&macro_wait_time 3000>,
                 <&rgb_ug RGB_OFF>;
         };
 
-        // レイヤー7(通常)に戻り、LEDをOFFにする
-
-        to_l7_off: to_l7_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 7 &rgb_ug RGB_OFF>;
-        };
-
         // 【追加】レイヤー5へ移動し、LEDをONにして青くする（1秒後に自動消灯）
-
         to_l5_blue: to_l5_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&to 5>,
-                <&macro_tap &rgb_ug RGB_COLOR_HSB(240, 100, 50)>,
-                <&macro_tap &rgb_ug RGB_ON>;
-                // <&macro_wait_time 5000>,
-                // <&macro_tap &rgb_ug RGB_OFF>;
+            bindings =<&to 5>;
         };
 
         // 【追加】レイヤー7へ移動し、LEDをONにして紫にする（1秒後に自動消灯）
-
         to_l7_purple: to_l7_purple {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&to 7 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(290, 100, 50)>,
-                <&macro_wait_time 1000>,
-                <&rgb_ug RGB_OFF>;
+                <&to 7>;
+                // <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(290, 100, 50)>,
+                // <&macro_wait_time 1000>,
+                // <&rgb_ug RGB_OFF>;
         };
 
         // 【追加】レイヤー8へ移動し、LEDをONにしてオレンジにする（1秒後に自動消灯）
@@ -77,9 +63,9 @@
             bindings =
                 <&to 8>,
                 <&rgb_ug RGB_COLOR_HSB(10, 100, 50)>,
-                <&rgb_ug RGB_ON>,
-                <&macro_wait_time 3000>,
-                <&rgb_ug RGB_OFF>;
+                <&rgb_ug RGB_ON>;
+                // <&macro_wait_time 3000>,
+                // <&rgb_ug RGB_OFF>;
         };
     };
 
