@@ -1663,16 +1663,12 @@ rect.held, rect.combo.held {
 <g transform="translate(348, 226) rotate(24.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#QWERTY">
-<text x="0" y="-4" class="key tap layer-activator">QWERTY</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;to_l0_off</tspan></text>
 </g>
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Mod">
-<text x="0" y="-4" class="key tap layer-activator">Mod</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;to_l7_off</tspan></text>
 </g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key none keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -2475,9 +2471,7 @@ rect.held, rect.combo.held {
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#SYSTEM">
-<text x="0" y="-4" class="key tap layer-activator">SYSTEM</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;to_l4_red</tspan></text>
 </g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key none keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>

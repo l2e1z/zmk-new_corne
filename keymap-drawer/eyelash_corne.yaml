@@ -241,8 +241,8 @@ layers:
   - RGB BRD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: QWERTY, h: toggle}
-  - {t: Mod, h: toggle}
+  - '&to_l0_off'
+  - '&to_l7_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   GAME_QWERTY:
@@ -389,7 +389,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: QWERTY, h: toggle}
-  - {t: SYSTEM, h: toggle}
+  - '&to_l4_red'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: GAME_QWERTY, h: toggle}
   MOUSE:
