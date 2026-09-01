@@ -141,7 +141,7 @@
 
             /* ★ Ctrl、Shift、A に相当する3つのキー位置番号を指定します */
 
-            key-positions = <CTRL 13 28 14>;
+            key-positions = <13 28 14>;
             bindings = <&select_line>;
 
             /* ★ 通常レイヤー（例: 0番）のみで有効化する設定 */
