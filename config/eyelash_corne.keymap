@@ -106,6 +106,13 @@
             quick-tap-ms = <150>;
             bindings = <&mo>, <&kp>;
         };
+
+        shift_muhenkan: shift_muhenkan {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_MUHENKAN";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp LEFT_SHIFT>, <&kp INT_MUHENKAN>;
+        };
     };
 
     combos {
@@ -123,10 +130,10 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I          &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &lt 7 INT_YEN
-                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 SPACE  &td_to_layer8
+&kp TAB          &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I          &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL        &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
+&shift_muhenkan  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &lt 7 INT_YEN
+                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 SPACE  &td_to_layer8
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -231,10 +238,10 @@
         ONEHAND_LAYER {
             display-name = "Chill";
             bindings = <
-&none  &none  &none  &none  &none  &none                       &none         &none      &none       &none   &none           &none         &kp BACKSPACE
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none       &none   &none           &kp UP_ARROW  &none
-&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &none       &none   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
-                     &none  &none  &to 0                                     &kp ENTER  &to_l0_off  &trans
+&none  &none  &none  &none  &none  &none                       &none         &none      &none             &none   &none           &none         &kp BACKSPACE
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none             &none   &none           &kp UP_ARROW  &none
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+                     &none  &none  &to 0                                     &kp ENTER  &to_l0_off        &trans
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
