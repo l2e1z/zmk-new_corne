@@ -62,6 +62,17 @@
             // <&macro_wait_time 3000>,
             // <&rgb_ug RGB_OFF>;
         };
+
+        /* 1. 一連のキー送信を行うマクロの定義 (行選択マクロ)*/
+        select_line: select_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp HOME>       /* ① 行頭へ移動 */
+                = <&macro_press &kp LSHFT>    /* ② Shiftキーを押す */
+                = <&macro_tap &kp END>        /* ③ 行末まで移動（選択） */
+                = <&macro_release &kp LSHFT>; /* ④ Shiftキーを離す */
+        };
     };
 
     behaviors {
@@ -123,6 +134,17 @@
         task_manager {
             bindings = <&kp LS(LC(ESCAPE))>;
             key-positions = <0 13 28 43>;
+        };
+
+        /* 2. レイヤー制限付きコンボの定義 (行選択マクロ)*/
+        combo_select_line {
+            timeout-ms = <50>;
+            /* ★ Ctrl、Shift、A に相当する3つのキー位置番号を指定します */
+            key-positions = <CTRLのキー番号 SHIFTのキー番号 Aのキー番号>;
+            bindings = <&select_line>;
+            
+            /* ★ 通常レイヤー（例: 0番）のみで有効化する設定 */
+            layers = <0>; 
         };
     };
 
