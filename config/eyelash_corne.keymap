@@ -147,10 +147,10 @@
         SYMBOL_LAYER {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp AMPERSAND  &kp AT    &kp UNDER   &kp LEFT_BRACE       &kp LS(EQUAL)                                &mmv MOVE_UP                     &kp EQUAL          &kp LS(INTERNATIONAL_1)  &kp MINUS              &none                &kp PERCENT              &kp BSPC
-&trans  &kp CARET      &kp HASH  &kp DOLLAR  &none                &kp RIGHT_BRACKET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp ASTRK                &kp LESS_THAN          &kp GREATER_THAN     &kp LEFT_PARENTHESIS     &kp NON_US_HASH
-&trans  &none          &kp EXCL  &none       &kp INTERNATIONAL_3  &kp BACKSLASH      &trans                    &mmv MOVE_DOWN                   &kp UNDER          &kp PLUS                 &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(INTERNATIONAL_3)  &kp LS(INT_YEN)
-                                 &trans      &trans               &kp SPACE                                                                     &kp RET            &trans                   &trans
+&trans  &kp AMPERSAND  &kp AT    &kp UNDER     &kp LEFT_BRACE       &kp LS(EQUAL)                                &mmv MOVE_UP                     &kp EQUAL          &kp LS(INTERNATIONAL_1)  &kp MINUS              &none                &kp PERCENT              &kp BSPC
+&trans  &kp CARET      &kp HASH  &kp DOLLAR    &none                &kp RIGHT_BRACKET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp ASTRK                &kp LESS_THAN          &kp GREATER_THAN     &kp LEFT_PARENTHESIS     &kp NON_US_HASH
+&trans  &none          &kp EXCL  &kp QUESTION  &kp INTERNATIONAL_3  &kp BACKSLASH      &trans                    &mmv MOVE_DOWN                   &kp UNDER          &kp PLUS                 &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(INTERNATIONAL_3)  &kp LS(INT_YEN)
+                                 &trans        &trans               &kp SPACE                                                                     &kp RET            &trans                   &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
