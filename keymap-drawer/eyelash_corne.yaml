@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '?'
   - INTERNATIONAL 3
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
