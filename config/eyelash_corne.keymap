@@ -112,6 +112,8 @@
             label = "SHIFT_MUHENKAN";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp LEFT_SHIFT>, <&kp INT_MUHENKAN>;
+
+            tapping-term-ms = <350>;
         };
     };
 
