@@ -69,7 +69,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_release>, <&kp LSHFT>;
- /* ④ Shiftキーを離す */
+
+            /* ④ Shiftキーを離す */
         };
     };
 
@@ -192,10 +193,10 @@
         NUM_LAYER {
             display-name = "Fn&NUM";
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6         &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp BACKSPACE  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0        &kp C_MUTE                    &mmv MOVE_DOWN                   &trans         &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                    &trans        &trans        &trans                                                                       &trans         &trans  &trans
+&kp ESCAPE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6         &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
+&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp BACKSPACE  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
+&trans      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0        &kp C_MUTE                    &mmv MOVE_DOWN                   &trans         &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                        &trans        &trans        &trans                                                                       &trans         &trans  &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
