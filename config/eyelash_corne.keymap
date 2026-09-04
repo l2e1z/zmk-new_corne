@@ -265,9 +265,9 @@
         ONEHAND_LAYER {
             display-name = "Chill";
             bindings = <
-&none  &none  &none  &none  &none  &none                       &none         &none      &none             &none   &none           &none         &kp BACKSPACE
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none             &none   &none           &kp UP_ARROW  &none
-&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+&none  &none  &none  &none  &none  &none                       &none         &none      &none             &kp MINUS  &none           &none         &kp BACKSPACE
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none             &none      &none           &kp UP_ARROW  &none
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
                      &none  &none  &to 0                                     &kp ENTER  &to_l0_off        &trans
             >;
 
