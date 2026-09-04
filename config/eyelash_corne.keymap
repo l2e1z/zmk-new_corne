@@ -57,7 +57,7 @@
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 8 &rgb_ug RGB_COLOR_HSB(10, 100, 50) &rgb_ug RGB_ON>;
+            bindings = <&to 8 &rgb_ug RGB_COLOR_HSB(5, 100, 50) &rgb_ug RGB_ON>;
 
             // <&macro_wait_time 3000>,
             // <&rgb_ug RGB_OFF>;
