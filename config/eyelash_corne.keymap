@@ -96,9 +96,9 @@
             tap-ms = <0>;
         };
 
-        td_to_layer8: td_to_layer8 {
+        st_toL9_dt_toL8: st_toL9_dt_toL8 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_TO_LAYER8";
+            label = "ST_TOL9_DT_TOL8";
             #binding-cells = <0>;
             bindings = <&mo 9>, <&to_l8_orange>;
 
@@ -157,10 +157,10 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB          &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I          &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL        &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
-&shift_muhenkan  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &lt 7 INT_YEN
-                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 SPACE  &td_to_layer8
+&kp TAB          &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I             &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL        &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K             &kp L    &kp SEMI  &kp SQT
+&shift_muhenkan  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA         &kp DOT  &kp FSLH  &lt 7 INT_YEN
+                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -196,7 +196,7 @@
 &kp ESCAPE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6         &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
 &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp BACKSPACE  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
 &trans      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0        &kp C_MUTE                    &mmv MOVE_DOWN                   &trans         &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                        &trans        &trans        &trans                                                                       &trans         &trans  &trans
+                                        &trans        &trans        &kp N0                                                                       &trans         &trans  &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
