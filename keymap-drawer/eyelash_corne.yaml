@@ -496,3 +496,9 @@ combos:
 - p: [13, 28, 14]
   k: '&select_line'
   l: [QWERTY]
+- p: [17, 16]
+  k: INT MUHENKAN
+  l: [QWERTY]
+- p: [23, 24]
+  k: INT HENKAN
+  l: [QWERTY]
