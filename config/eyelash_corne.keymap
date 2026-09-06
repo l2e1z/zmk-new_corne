@@ -149,6 +149,18 @@
 
             layers = <0>;
         };
+
+        Combo_Muhenkan {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <17 16>;
+            layers = <0>;
+        };
+
+        Combo_Henkan {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <23 24>;
+            layers = <0>;
+        };
     };
 
     keymap {
