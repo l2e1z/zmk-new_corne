@@ -205,10 +205,10 @@
         NUM_LAYER {
             display-name = "Fn&NUM";
             bindings = <
-&kp ESCAPE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6         &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp BACKSPACE  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0        &kp C_MUTE                    &mmv MOVE_DOWN                   &trans         &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                        &trans        &trans        &kp N0                                                                       &trans         &trans  &trans
+&kp ESCAPE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
+&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0   &kp F12
+&trans      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5   &none
+                                        &trans        &trans        &kp N0                                                                       &trans        &trans        &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
