@@ -56,9 +56,9 @@
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON>;
-
-            <&to 8>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(7, 100, 50)>,
+                    <&rgb_ug RGB_ON>,
+                    <&to 8>;
         };
 
         // 【追加】レイヤー10へ移動し、LEDをONにして水色にする
@@ -66,9 +66,9 @@
         to_l10_light_blue: to_l10_light_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON>;
-
-            <&to 10>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50)>,
+                    <&rgb_ug RGB_ON>,
+                    <&to 10>;
         };
 
         /* 1. 一連のキー送信を行うマクロの定義 (行選択マクロ)*/
