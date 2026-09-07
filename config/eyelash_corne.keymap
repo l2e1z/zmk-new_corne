@@ -175,10 +175,10 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB          &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y        &kp U        &kp I             &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL        &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K             &kp L    &kp SEMI  &kp SQT
-&shift_muhenkan  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA         &kp DOT  &kp FSLH  &lt 7 INT_YEN
-                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                               &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8
+&kp TAB          &kp Q  &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I             &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL        &kp A  &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K             &kp L    &kp SEMI  &kp SQT
+&shift_muhenkan  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA         &kp DOT  &kp FSLH  &lt 7 INT_YEN
+                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -199,10 +199,10 @@
         SYMBOL_LAYER {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp AMPERSAND  &kp AT    &kp UNDER     &kp LEFT_BRACE       &kp LS(EQUAL)                                &mmv MOVE_UP                     &kp EQUAL          &kp LS(INTERNATIONAL_1)  &kp MINUS              &none                &kp PERCENT              &kp BSPC
-&trans  &kp CARET      &kp HASH  &kp DOLLAR    &none                &kp RIGHT_BRACKET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp ASTRK                &kp LESS_THAN          &kp GREATER_THAN     &kp LEFT_PARENTHESIS     &kp NON_US_HASH
-&trans  &none          &kp EXCL  &kp QUESTION  &kp INTERNATIONAL_3  &kp BACKSLASH      &trans                    &mmv MOVE_DOWN                   &kp UNDER          &kp PLUS                 &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(INTERNATIONAL_3)  &kp LS(INT_YEN)
-                                 &trans        &trans               &kp SPACE                                                                     &kp RET            &trans                   &trans
+&trans  &kp AMPERSAND  &kp AT    &kp UNDER     &kp LEFT_BRACE       &kp LS(EQUAL)                                    &mmv MOVE_UP                     &kp EQUAL          &kp LS(INTERNATIONAL_1)  &kp MINUS              &none                &kp PERCENT              &kp BSPC
+&trans  &kp CARET      &kp HASH  &kp DOLLAR    &none                &kp RIGHT_BRACKET                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp ASTRK                &kp LESS_THAN          &kp GREATER_THAN     &kp LEFT_PARENTHESIS     &kp NON_US_HASH
+&trans  &none          &kp EXCL  &kp QUESTION  &kp INTERNATIONAL_3  &kp BACKSLASH      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp UNDER          &kp PLUS                 &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(INTERNATIONAL_3)  &kp LS(INT_YEN)
+                                 &trans        &trans               &kp SPACE                                                                         &kp RET            &trans                   &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -235,10 +235,10 @@
         GAME_QWERTY {
             display-name = "GAME_QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y        &kp U                  &kp I          &kp O    &kp P     &kp AT
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K          &kp L    &kp SEMI  &kp COLON
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N        &kp M                  &kp COMMA      &kp DOT  &kp FSLH  &lt 7 INTERNATIONAL_3
-                         &kp LALT  &mo 6  &kp SPACE                                               &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &kp RIGHT_ALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U                  &kp I          &kp O    &kp P     &kp AT
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K          &kp L    &kp SEMI  &kp COLON
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                  &kp COMMA      &kp DOT  &kp FSLH  &lt 7 INTERNATIONAL_3
+                         &kp LALT  &mo 6  &kp SPACE                                                &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -271,10 +271,10 @@
         MOUSE_LAYER {
             display-name = "MOUSE";
             bindings = <
-&kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none     &kp BACKSPACE
-&none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &none
-&kp LS(BACKSPACE)  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0  &none                    &msc SCRL_DOWN                   &msc SCRL_DOWN  &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &none     &none
-                                   &kp MINUS  &kp FSLH  &none                                                             &none           &none           &to_l0_off
+&kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                                &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none     &kp BACKSPACE
+&none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &none
+&kp LS(BACKSPACE)  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0  &kp C_MUTE                    &msc SCRL_DOWN                   &msc SCRL_DOWN  &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &none     &none
+                                   &kp MINUS  &kp FSLH  &none                                                                  &none           &none           &to_l0_off
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
