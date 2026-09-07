@@ -163,6 +163,11 @@
             key-positions = <3 2>;
             layers = <0>;
         };
+
+        Close_Window {
+            bindings = <&kp LA(F4)>;
+            key-positions = <28 13 1>;
+        };
     };
 
     keymap {
