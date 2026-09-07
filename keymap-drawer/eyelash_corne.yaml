@@ -498,7 +498,7 @@ layers:
   - '&to_l0_off'
   - '&to_l0_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ;, s: ':'}
+  - {t: Sft+;, s: 'Sft+:'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
