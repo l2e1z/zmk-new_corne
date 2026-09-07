@@ -72,6 +72,14 @@
         };
 
         /* 1. 一連のキー送信を行うマクロの定義 (行選択マクロ)*/
+
+        select_line: select_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release>, <&kp LSHFT>;
+
+            /* ④ Shiftキーを離す */
+        };
     };
 
     behaviors {
