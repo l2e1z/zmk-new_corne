@@ -415,11 +415,11 @@ layers:
   - $$mdi:pan-left$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-right$$
-  - $$mdi:pan-down$$
+  - '&mkp MB4'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:arrow-up-bold$$
+  - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'Sft+$$mdi:backspace$$', type: backspace}
   - {t: '6', s: ^}
@@ -429,12 +429,12 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-down$$
+  - $$mdi:pan-down$$
   - $$mdi:pan-left$$
-  - $$mdi:pan-right$$
   - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:pan-right$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '-', s: _}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -501,4 +501,7 @@ combos:
   l: [QWERTY]
 - p: [23, 24]
   k: INT HENKAN
+  l: [QWERTY]
+- p: [3, 2]
+  k: $$mdi:keyboard-esc$$
   l: [QWERTY]
