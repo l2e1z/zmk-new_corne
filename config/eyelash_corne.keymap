@@ -161,6 +161,12 @@
             key-positions = <23 24>;
             layers = <0>;
         };
+
+        ComboESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <3 2>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -265,10 +271,10 @@
         MOUSE_LAYER {
             display-name = "MOUSE";
             bindings = <
-&kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &none           &kp BACKSPACE
-&none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW    &none
-&kp LS(BACKSPACE)  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0  &none                    &msc SCRL_DOWN                   &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MCLK       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT
-                                   &kp MINUS  &kp FSLH  &none                                                             &none           &none            &to_l0_off
+&kp TAB            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &msc SCRL_UP                     &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none     &kp BACKSPACE
+&none              &kp N1  &kp N2  &kp N3     &kp N4    &kp N5           &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &none
+&kp LS(BACKSPACE)  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0  &none                    &msc SCRL_DOWN                   &msc SCRL_DOWN  &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &none     &none
+                                   &kp MINUS  &kp FSLH  &none                                                             &none           &none           &to_l0_off
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
