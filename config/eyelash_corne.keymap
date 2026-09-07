@@ -46,21 +46,27 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 7>;
-
-            // <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(290, 100, 50)>,
+            
             // <&macro_wait_time 1000>,
             // <&rgb_ug RGB_OFF>;
         };
 
-        // 【追加】レイヤー8へ移動し、LEDをONにしてオレンジにする（1秒後に自動消灯）
-
+        // 【追加】レイヤー8へ移動し、LEDをONにしてオレンジにする
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 8 &rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON>;
+            bindings = 
+                <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON>;
+                <&to 8>;
+        };
 
-            // <&macro_wait_time 3000>,
-            // <&rgb_ug RGB_OFF>;
+        // 【追加】レイヤー10へ移動し、LEDをONにして水色にする
+        to_l10_light_blue: to_l10_light_blue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = 
+                <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON>;
+                <&to 10>;
         };
 
         /* 1. 一連のキー送信を行うマクロの定義 (行選択マクロ)*/
