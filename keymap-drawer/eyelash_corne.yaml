@@ -554,3 +554,5 @@ combos:
 - p: [3, 2]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
+- p: [28, 13, 1]
+  k: Alt+F4
