@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - '&st_toL9_dt_toL8'
+  - '&st_toL9_dt_toL8_tt_toL10'
   MOVE:
   - $$mdi:keyboard-esc$$
   - HOME
