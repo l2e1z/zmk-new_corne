@@ -75,7 +75,7 @@
 
             /* ④ Shiftキーを離す */
         };
-        
+
     };
 
     behaviors {
@@ -129,6 +129,25 @@
 
             tapping-term-ms = <350>;
         };
+
+        // Shift + Ctrl + Q → Alt + F4
+        // Shift単独では通常のQ、Shift + Ctrl時だけAlt+F4
+        q_shift_ctrl_altf4: q_shift_ctrl_altf4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&q_ctrl_altf4>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        // Ctrl + Q → Q、Shift + Ctrl + Q → Alt + F4
+        q_ctrl_altf4: q_ctrl_altf4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp LA(F4)>;
+            mods = <(MOD_LCTL)>;
+        };
+
     };
 
     combos {
@@ -171,6 +190,11 @@
             key-positions = <3 2>;
             layers = <0>;
         };
+
+        Close_Window {
+            bindings = <&kp LA(F4)>;
+            key-positions = <28 13 1>;
+        };
     };
 
     keymap {
@@ -179,7 +203,7 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB          &kp Q  &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
+&kp TAB          &q_shift_ctrl_altf4  &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
 &kp LCTRL        &kp A  &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
 &shift_muhenkan  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 7 INT_YEN
                                &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
