@@ -492,13 +492,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Tenkey:
   - $$mdi:keyboard-tab$$
+  - '&to_l0_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Sft++
+  - {t: ;, s: ':'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
