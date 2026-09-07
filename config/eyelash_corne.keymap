@@ -46,38 +46,32 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 7>;
-            
+
             // <&macro_wait_time 1000>,
             // <&rgb_ug RGB_OFF>;
         };
 
         // 【追加】レイヤー8へ移動し、LEDをONにしてオレンジにする
+
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-                <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON>;
-                <&to 8>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON>;
+
+            <&to 8>;
         };
 
         // 【追加】レイヤー10へ移動し、LEDをONにして水色にする
+
         to_l10_light_blue: to_l10_light_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-                <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON>;
-                <&to 10>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON>;
+
+            <&to 10>;
         };
 
         /* 1. 一連のキー送信を行うマクロの定義 (行選択マクロ)*/
-
-        select_line: select_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT>;
-
-            /* ④ Shiftキーを離す */
-        };
     };
 
     behaviors {
@@ -296,6 +290,17 @@
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
+
+        TENKEY_LAYER {
+            bindings = <
+&kp TAB  &none  &none  &none  &none  &none                  &none         &kp LS(PLUS)  &kp N7     &kp N8      &kp N9  &none     &kp BSPC
+&none    &none  &none  &none  &none  &none           &none  &none  &none  &kp MINUS     &kp N4     &kp N5      &kp N6  &none     &none
+&none    &none  &none  &none  &none  &none  &none           &none         &kp N0        &kp N1     &kp N2      &kp N3  &kp FSLH  &none
+                       &none  &none  &none                                &kp SPACE     &kp SPACE  &to_l0_off
+            >;
+
+            label = "Tenkey";
         };
     };
 };
