@@ -605,12 +605,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="159" y="22" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-5">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-MOVE">
@@ -874,12 +868,6 @@ rect.held, rect.combo.held {
 <path d="M92,131 l176,71" class="combo"/>
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
 </g>
 </g>
 </g>
@@ -1152,12 +1140,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-Fn&amp;NUM">
@@ -1423,12 +1405,6 @@ rect.held, rect.combo.held {
 <path d="M92,131 l176,71" class="combo"/>
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
 </g>
 </g>
 </g>
@@ -1716,12 +1692,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-GAME_QWERTY">
@@ -1990,12 +1960,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1911)" class="layer-GAME_NUM">
@@ -2259,12 +2223,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 2229)" class="layer-Mod">
@@ -2519,12 +2477,6 @@ rect.held, rect.combo.held {
 <path d="M92,131 l176,71" class="combo"/>
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
 </g>
 </g>
 </g>
@@ -2804,12 +2756,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 2866)" class="layer-Chill">
@@ -3067,12 +3013,6 @@ rect.held, rect.combo.held {
 <path d="M92,131 l176,71" class="combo"/>
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
 </g>
 </g>
 </g>
@@ -3339,12 +3279,6 @@ rect.held, rect.combo.held {
 <path d="M92,131 l176,71" class="combo"/>
 <rect rx="6" ry="6" x="78" y="118" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="83" y="122" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-1">
-<path d="M47,105 l-13,38" class="combo"/>
-<path d="M47,105 l27,-40" class="combo"/>
-<rect rx="6" ry="6" x="33" y="92" width="28" height="26" class="combo"/>
-<text x="47" y="105" class="combo tap">Alt+F4</text>
 </g>
 </g>
 </g>
