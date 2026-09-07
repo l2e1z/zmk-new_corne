@@ -2,7 +2,7 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - Q
+  - {t: Q, s: Q}
   - W
   - E
   - R
@@ -498,7 +498,7 @@ layers:
   - '&to_l0_off'
   - '&to_l0_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Sft+;, s: 'Sft+:'}
+  - {t: ;, s: ':'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
