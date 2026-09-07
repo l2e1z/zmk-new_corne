@@ -96,11 +96,11 @@
             tap-ms = <0>;
         };
 
-        st_toL9_dt_toL8: st_toL9_dt_toL8 {
+        st_toL9_dt_toL8_tt_toL10: st_toL9_dt_toL8_tt_toL10 {
             compatible = "zmk,behavior-tap-dance";
-            label = "ST_TOL9_DT_TOL8";
+            label = "ST_TOL9_DT_TOL8_TT_TOL10";
             #binding-cells = <0>;
-            bindings = <&mo 9>, <&to_l8_orange>;
+            bindings = <&mo 9>, <&to_l8_orange>, <&to_l10_light_blue>;
 
             tapping-term-ms = <200>;
         };
@@ -178,7 +178,7 @@
 &kp TAB          &kp Q  &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I             &kp O    &kp P     &kp LEFT_BRACKET
 &kp LCTRL        &kp A  &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K             &kp L    &kp SEMI  &kp SQT
 &shift_muhenkan  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA         &kp DOT  &kp FSLH  &lt 7 INT_YEN
-                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8
+                               &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
