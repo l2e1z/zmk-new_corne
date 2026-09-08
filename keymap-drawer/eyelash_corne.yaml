@@ -15,7 +15,7 @@ layers:
   - P
   - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-control$$
-  - A
+  - {t: A, s: A}
   - S
   - D
   - F
