@@ -151,6 +151,26 @@
 
             mods = <(MOD_LCTL)>;
         };
+
+        // Ctrl + Shift + A → select_line
+        // Shift単独では通常のA
+        // Ctrl + Shift時だけselect_line
+        a_shift_ctrl_select_line: a_shift_ctrl_select_line {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&a_ctrl_select_line>;
+
+            mods = <(MOD_LSFT)>;
+        };
+
+        // Ctrl + A → A、Shift + Ctrl + A → select_line
+        a_ctrl_select_line: a_ctrl_select_line {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&select_line>;
+
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     combos {
@@ -202,7 +222,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB          &q_shift_ctrl_altf4  &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL        &kp A                &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL        &a_shift_ctrl_select_line                &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
 &shift_muhenkan  &kp Z                &kp X  &kp C         &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 7 INT_YEN
                                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
             >;
