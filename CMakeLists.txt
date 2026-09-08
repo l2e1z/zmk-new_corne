@@ -1,6 +1,8 @@
 # Copyright (c) 2026
 # SPDX-License-Identifier: MIT
 
-target_sources(app PRIVATE
-    src/behaviors/behavior_mask_mods.c
-)
+if ((NOT CONFIG_ZMK_SPLIT) OR CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+    target_sources(app PRIVATE
+        src/behaviors/behavior_mask_mods.c
+    )
+endif()
