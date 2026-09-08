@@ -10,7 +10,7 @@ manifest:
       revision: main
     - name: zmk
       remote: cormoran
-      revision: ba75e728ee1742897d6c5d8142b27ae9c4c53433
+      revision: 4493783ef88ce2e653bf8217c92ee17140df71e3
       import: app/west.yml
     - name: zmk-behavior-runtime-sensor-rotate
       remote: cormoran
