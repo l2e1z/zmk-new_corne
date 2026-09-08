@@ -12,6 +12,7 @@
 
 #include <zmk/behavior.h>
 #include <zmk/hid.h>
+#include <zmk/keymap.h>
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
