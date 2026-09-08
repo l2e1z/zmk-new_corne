@@ -72,11 +72,16 @@
         select_line: select_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+
+            // キューのディレイを0にして、Aが離される前に瞬時に終わらせる
+            wait-ms = <0>;
+            tap-ms = <0>;
+
             bindings
                 = <&macro_tap &kp HOME>       /* ① 行頭へ移動 */
-                , <&macro_press &kp LSHFT>    /* ② Shiftキーを押す */
+                , <&macro_press &kp RSHFT>    /* ② Shiftキーを押す */
                 , <&macro_tap &kp END>        /* ③ 行末まで移動（選択） */
-                , <&macro_release &kp LSHFT>; /* ④ Shiftキーを離す */
+                , <&macro_release &kp RSHFT>; /* ④ Shiftキーを離す */
 
         };
     };
@@ -164,18 +169,27 @@
             bindings = <&kp A>, <&a_ctrl_select_line>;
 
             mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
         };
 
         // Ctrl + A → A、Shift + Ctrl + A → select_line
         a_ctrl_select_line: a_ctrl_select_line {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&select_line>;
+            bindings = <&kp A>, <&mask_select_line>;
 
             mods = <(MOD_LCTL)>;
-            keep-mods = <0>;
         };
+
+
+        mask_select_line: mask_select_line {
+            compatible = "zmk,behavior-mask-mods";
+            #binding-cells = <0>;
+
+            bindings = <&select_line>;
+
+            mods = <(MOD_LCTL | MOD_LSFT)>;
+        };
+
     };
 
     combos {

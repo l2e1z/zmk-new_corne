@@ -1,0 +1,17 @@
+# Copyright (c) 2026
+# SPDX-License-Identifier: MIT
+
+description: Mask modifiers while invoking another behavior
+
+compatible: "zmk,behavior-mask-mods"
+
+include: zero_param.yaml
+
+properties:
+  bindings:
+    type: phandle-array
+    required: true
+
+  mods:
+    type: int
+    required: true
