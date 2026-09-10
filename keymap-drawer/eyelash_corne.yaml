@@ -554,3 +554,18 @@ combos:
 - p: [3, 2]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
+- p: [25, 26]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY]
+- p: [11, 10]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [QWERTY]
+- p: [9, 10]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [QWERTY]
+- p: [14, 15]
+  k: Ctl+Sft+$$mdi:arrow-left-bold$$
+  l: [QWERTY]
+- p: [15, 16]
+  k: Sft+Ctl+$$mdi:arrow-right-bold$$
+  l: [QWERTY]
