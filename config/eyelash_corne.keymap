@@ -86,7 +86,8 @@
                 <&kp END>,
                 <&macro_release>,
                 <&kp RSHFT>;
- /* ④ Shiftキーを離す */
+
+            /* ④ Shiftキーを離す */
         };
     };
 
@@ -381,9 +382,9 @@
         ONEHAND_LAYER {
             display-name = "Chill";
             bindings = <
-&none  &none  &none  &none  &none  &none                       &none         &none      &none             &kp MINUS  &none           &none         &kp BACKSPACE
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none             &none      &none           &kp UP_ARROW  &none
-&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+&none  &none  &none  &none  &none  &none                       &none         &none      &none             &msc SCRL_UP    &none            &none         &kp BACKSPACE
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp UP_ARROW  &none
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none           &kp LEFT_ARROW   &kp DOWN      &kp RIGHT
                      &none  &none  &to 0                                     &kp ENTER  &to_l0_off        &trans
             >;
 
