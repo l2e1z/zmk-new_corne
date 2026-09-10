@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - '&shift_muhenkan'
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
