@@ -169,6 +169,7 @@
             bindings = <&kp A>, <&a_ctrl_select_line>;
 
             mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
         // Ctrl + A → A、Shift + Ctrl + A → select_line
