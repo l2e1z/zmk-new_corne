@@ -198,13 +198,10 @@
         mouse_click: mouse_click {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-
             bindings = <&mkp>, <&mkp>;
         };
-        
     };
 
     combos {
@@ -285,10 +282,10 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &q_shift_ctrl_altf4        &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL       &a_shift_ctrl_select_line  &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 7 INT_YEN
-                                                  &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
+&kp TAB         &q_shift_ctrl_altf4        &kp W  &kp E         &kp R  &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &a_shift_ctrl_select_line  &kp S  &kp D         &kp F  &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 7 INT_YEN
+                                                  &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
