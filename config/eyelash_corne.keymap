@@ -86,7 +86,8 @@
                 <&kp END>,
                 <&macro_release>,
                 <&kp RSHFT>;
- /* ④ Shiftキーを離す */
+
+            /* ④ Shiftキーを離す */
         };
     };
 
@@ -284,10 +285,10 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB          &q_shift_ctrl_altf4        &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL        &a_shift_ctrl_select_line  &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
-&shift_muhenkan  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 7 INT_YEN
-                                                   &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
+&kp TAB         &q_shift_ctrl_altf4        &kp W  &kp E         &kp R  &kp T                                &kp UP                &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &a_shift_ctrl_select_line  &kp S  &kp D         &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 7 INT_YEN
+                                                  &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -392,9 +393,9 @@
         ONEHAND_LAYER {
             display-name = "Chill";
             bindings = <
-&none  &none  &none  &none  &none  &none                       &none         &none      &none             &kp MINUS  &none           &none         &kp BACKSPACE
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none             &none      &none           &kp UP_ARROW  &none
-&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+&none  &none  &none  &none  &none  &none                       &none         &none      &none             &msc SCRL_UP    &none            &none         &kp BACKSPACE
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp UP_ARROW  &none
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none           &kp LEFT_ARROW   &kp DOWN      &kp RIGHT
                      &none  &none  &to 0                                     &kp ENTER  &to_l0_off        &trans
             >;
 
