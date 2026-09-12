@@ -79,8 +79,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mkp MB4'
+  - '&mkp MB5'
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:pan-up$$
   - Ctl+B
