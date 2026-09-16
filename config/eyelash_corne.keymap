@@ -89,6 +89,19 @@
 
             /* ④ Shiftキーを離す */
         };
+
+        num_en: num_en {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings
+                // INT5(Win無変換)とLANG2(Mac英数)を両方叩いてから数字を入力
+                = <&macro_tap &kp INT5 &kp LANG2>
+                , <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        };
+
+
     };
 
     behaviors {
