@@ -329,9 +329,9 @@
             display-name = "Fn&NUM";
             bindings = <
 &kp ESCAPE  &kp F1            &kp F2            &kp F3            &kp F4            &kp F5                                          &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
-&trans      &num_en NUMBER_1  &num_en NUMBER_2  &num_en NUMBER_3  &num_en NUMBER_4  &num_en NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0   &kp F12
-&trans      &num_en NUMBER_6  &num_en N7        &kp N8            &kp N9            &kp N0            &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5   &none
-                                                &trans            &trans            &kp N0                                                                           &trans        &trans        &trans
+&trans      &num_en NUMBER_1  &num_en NUMBER_2  &num_en NUMBER_3  &num_en NUMBER_4  &num_en NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &num_en NUMBER_6  &num_en N7        &num_en N8        &num_en N9        &num_en N0   &kp F12
+&trans      &num_en NUMBER_6  &num_en N7        &num_en N8            &num_en N9            &num_en N0            &kp C_MUTE                    &mmv MOVE_DOWN                   &num_en NUMBER_1  &num_en NUMBER_2  &num_en NUMBER_3  &num_en NUMBER_4  &num_en N5   &none
+                                                &trans            &trans            &num_en N0                                                                           &trans        &trans        &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
