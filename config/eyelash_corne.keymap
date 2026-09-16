@@ -45,7 +45,7 @@
         to_l7_purple: to_l7_purple {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 7>;
+            bindings = <&to 8>;
 
             // <&macro_wait_time 1000>,
             // <&rgb_ug RGB_OFF>;
@@ -56,7 +56,7 @@
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON &to 8>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON &to 9>;
         };
 
         // 【追加】レイヤー10へ移動し、LEDをONにして水色にする
@@ -64,7 +64,7 @@
         to_l10_light_blue: to_l10_light_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON &to 10>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON &to 11>;
         };
 
         /* 1. 一連のキー送信を行うマクロの定義 (行選択マクロ)*/
@@ -130,7 +130,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ST_TOL9_DT_TOL8_TT_TOL10";
             #binding-cells = <0>;
-            bindings = <&mo 9>, <&to_l8_orange>, <&to_l10_light_blue>;
+            bindings = <&mo 10>, <&to_l8_orange>, <&to_l10_light_blue>;
 
             tapping-term-ms = <200>;
         };
@@ -297,7 +297,7 @@
             bindings = <
 &kp TAB         &q_shift_ctrl_altf4        &kp W  &kp E         &kp R  &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U        &kp I                      &kp O    &kp P     &kp LEFT_BRACKET
 &kp LCTRL       &a_shift_ctrl_select_line  &kp S  &kp D         &kp F  &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &kp J        &kp K                      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 7 INT_YEN
+&kp LEFT_SHIFT  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 8 INT_YEN
                                                   &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
             >;
 
@@ -309,7 +309,7 @@
             bindings = <
 &kp ESC  &kp HOME   &kp DEL         &kp UP        &kp BACKSPACE    &kp END                                  &mmv MOVE_UP                     &mkp LCLK  &kp PG_UP         &kp UP_ARROW        &kp BACKSPACE  &none      &kp BSPC
 &trans   &kp RC(A)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME   &kp LEFT          &kp DOWN            &kp RIGHT      &kp ENTER  &kp END
-&trans   &none      &none           &mkp MCLK     &msc SCRL_UP     &kp RC(B)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RC(N)  &kp PAGE_DOWN     &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &none      &none
+&trans   &mkp MB4   &mkp MB5        &mkp MCLK     &msc SCRL_UP     &kp RC(B)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RC(N)  &kp PAGE_DOWN     &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &none      &none
                                     &kp LEFT_WIN  &trans           &kp ENTER                                                                 &kp ENTER  &kp INT_MUHENKAN  &kp INT_HENKAN
             >;
 
@@ -352,25 +352,37 @@
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
-        GAME_QWERTY {
+        GameMain {
             display-name = "GAME_QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U                  &kp I          &kp O    &kp P     &kp AT
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K          &kp L    &kp SEMI  &kp COLON
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                  &kp COMMA      &kp DOT  &kp FSLH  &lt 7 INTERNATIONAL_3
-                         &kp LALT  &mo 6  &kp SPACE                                                &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &kp RIGHT_ALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U                  &kp I      &kp O    &kp P     &kp AT
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                  &kp K      &kp L    &kp SEMI  &kp COLON
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M                  &kp COMMA  &kp DOT  &kp FSLH  &lt 8 INTERNATIONAL_3
+                         &kp LALT  &mo 6  &kp SPACE                                                &lt 3 SPACE  &lt 2 INTERNATIONAL_4  &mo 7
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
-        GAME_NUM {
+        GameSub {
             display-name = "GAME_NUM";
             bindings = <
-&kp ESC  &kp N2  &kp NUMBER_3  &trans  &kp NUMBER_4  &kp N5                    &trans          &none     &trans               &trans          &trans  &trans  &trans
-&trans   &kp N1  &trans        &trans  &trans        &trans            &trans  &trans  &trans  &kp BSPC  &trans               &trans          &trans  &trans  &trans
-&trans   &trans  &kp N7        &kp N8  &kp N9        &kp N0  &trans            &trans          &trans    &trans               &trans          &trans  &trans  &to_l0_off
-                               &trans  &trans        &trans                                    &trans    &kp INTERNATIONAL_5  &kp INT_HENKAN
+&kp ESC  &kp N2  &kp NUMBER_3  &trans  &kp NUMBER_4  &kp Y                     &trans          &trans     &trans               &trans          &kp BACKSPACE  &trans     &trans
+&trans   &kp N1  &trans        &trans  &trans        &kp H             &trans  &trans  &trans  &trans     &trans               &trans          &trans         &kp ENTER  &trans
+&trans   &trans  &kp N7        &kp N8  &kp N9        &kp N0  &trans            &trans          &trans     &trans               &trans          &trans         &trans     &none
+                               &trans  &trans        &trans                                    &kp ENTER  &kp INTERNATIONAL_5  &kp INT_HENKAN
+            >;
+
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
+
+        GameAssist {
+            display-name = "forLobby";
+            bindings = <
+&none  &none  &none  &none  &none  &none                       &none         &none      &none             &none   &none           &none         &kp BACKSPACE
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none      &none             &none   &none           &kp UP_ARROW  &none
+&none  &none  &none  &none  &none  &none  &kp C_MUTE           &none         &none      &kp INT_MUHENKAN  &none   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+                     &none  &none  &to 0                                     &kp ENTER  &to_l0_off        &trans
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
