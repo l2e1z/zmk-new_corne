@@ -170,29 +170,29 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '6'
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '&num_en NUMBER_6'
+  - '&num_en N7'
+  - '&num_en N8'
+  - '&num_en N9'
+  - '&num_en N0'
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - '&num_en NUMBER_6'
   - '&num_en N7'
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '&num_en N8'
+  - '&num_en N9'
+  - '&num_en N0'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - {t: '5', s: '%'}
+  - '&num_en NUMBER_1'
+  - '&num_en NUMBER_2'
+  - '&num_en NUMBER_3'
+  - '&num_en NUMBER_4'
+  - '&num_en N5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: ), type: held}
+  - {t: '&num_en N0', type: held}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
