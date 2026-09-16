@@ -162,11 +162,11 @@ layers:
   - F10
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - '&num_en NUMBER_1'
+  - '&num_en NUMBER_2'
+  - '&num_en NUMBER_3'
+  - '&num_en NUMBER_4'
+  - '&num_en NUMBER_5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -177,8 +177,8 @@ layers:
   - {t: '0', s: )}
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - '6'
-  - {t: '7', s: '&'}
+  - '&num_en NUMBER_6'
+  - '&num_en N7'
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
