@@ -23,10 +23,10 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - H
-  - J
-  - K
-  - L
+  - {t: H, s: '$$mdi:arrow-left-bold$$'}
+  - {t: J, s: '$$mdi:arrow-down-bold$$'}
+  - {t: K, s: '$$mdi:arrow-up-bold$$'}
+  - {t: L, s: '$$mdi:arrow-right-bold$$'}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
@@ -92,8 +92,8 @@ layers:
   - Sft+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LEFT WIN
-  - {type: held}
+  - '&win_l0'
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - INT MUHENKAN
