@@ -10,7 +10,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
-  - I
+  - {t: I, s: '$$mdi:arrow-up-bold$$'}
   - O
   - P
   - {t: '[', s: '{'}
@@ -23,9 +23,9 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: H, s: '$$mdi:arrow-left-bold$$'}
-  - {t: J, s: '$$mdi:arrow-down-bold$$'}
-  - {t: K, s: '$$mdi:arrow-up-bold$$'}
+  - H
+  - {t: J, s: '$$mdi:arrow-left-bold$$'}
+  - {t: K, s: '$$mdi:arrow-down-bold$$'}
   - {t: L, s: '$$mdi:arrow-right-bold$$'}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
