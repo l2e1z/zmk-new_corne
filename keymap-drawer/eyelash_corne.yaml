@@ -245,7 +245,7 @@ layers:
   - '&to_l0_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  GAME_QWERTY:
+  GAME:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -259,7 +259,7 @@ layers:
   - O
   - P
   - '@'
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-esc$$
   - A
   - S
   - D
@@ -289,12 +289,12 @@ layers:
   - {t: /, s: '?'}
   - {t: INTERNATIONAL 3, h: Mod}
   - $$mdi:apple-keyboard-option$$
-  - GAME_NUM
+  - G_NUM
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: INTERNATIONAL 4, h: SYMBOL}
   - forLobby
-  GAME_NUM:
+  G_NUM:
   - $$mdi:keyboard-esc$$
   - {t: '2', s: '@'}
   - '3'
