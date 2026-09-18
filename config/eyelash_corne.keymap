@@ -413,10 +413,10 @@
         GameSub {
             display-name = "G_NUM";
             bindings = <
-&kp ESC  &kp N2  &kp NUMBER_3  &trans  &kp NUMBER_4  &kp Y                     &trans          &trans     &trans               &trans          &kp BACKSPACE  &trans     &trans
-&trans   &kp N1  &trans        &trans  &trans        &kp H             &trans  &trans  &trans  &trans     &trans               &trans          &trans         &kp ENTER  &trans
-&trans   &trans  &kp N7        &kp N8  &kp N9        &kp N0  &trans            &trans          &trans     &trans               &trans          &trans         &trans     &none
-                               &trans  &trans        &trans                                    &kp ENTER  &kp INTERNATIONAL_5  &kp INT_HENKAN
+&kp ESC    &kp N2  &kp NUMBER_3  &trans  &kp NUMBER_4  &kp Y                     &trans          &trans     &trans               &trans          &kp BACKSPACE  &trans     &trans
+&kp LCTRL  &kp N1  &trans        &trans  &trans        &kp H             &trans  &trans  &trans  &trans     &trans               &trans          &trans         &kp ENTER  &trans
+&trans     &trans  &kp N7        &kp N8  &kp N9        &kp N0  &trans            &trans          &trans     &trans               &trans          &trans         &trans     &none
+                                 &trans  &trans        &trans                                    &kp ENTER  &kp INTERNATIONAL_5  &kp INT_HENKAN
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
