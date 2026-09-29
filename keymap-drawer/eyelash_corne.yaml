@@ -211,11 +211,11 @@ layers:
   - RGB OFF
   - RGB ON
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - '&bt_sd'
+  - '&bt_sd 1'
+  - '&bt_sd 2'
+  - '&bt_sd 3'
+  - '&bt_sd 4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
