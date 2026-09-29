@@ -1,0 +1,8 @@
+# Copyright (c) 2026
+# SPDX-License-Identifier: MIT
+
+description: Select a Bluetooth profile and disconnect all other connected profiles
+
+compatible: "zmk,behavior-bt-select-disconnect"
+
+include: one_param.yaml
