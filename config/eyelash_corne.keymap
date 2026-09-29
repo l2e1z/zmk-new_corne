@@ -261,6 +261,11 @@
             tapping-term-ms = <200>;
             bindings = <&mkp>, <&mkp>;
         };
+
+        bt_sd: bt_select_disconnect {
+            compatible = "zmk,behavior-bt-select-disconnect";
+            #binding-cells = <1>;
+        };
     };
 
     combos {
