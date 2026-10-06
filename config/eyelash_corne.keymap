@@ -358,10 +358,10 @@
         MOVE_LAYER {
             display-name = "MOVE";
             bindings = <
-&kp ESC  &kp HOME   &kp DEL         &kp UP     &kp BACKSPACE    &kp END                                  &mmv MOVE_UP                     &mkp LCLK  &kp PG_UP         &kp UP_ARROW        &kp BACKSPACE  &none      &kp BSPC
-&trans   &kp RC(A)  &kp LEFT_ARROW  &kp DOWN   &kp RIGHT_ARROW  &kp ENTER                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME   &kp LEFT          &kp DOWN            &kp RIGHT      &kp ENTER  &kp END
-&trans   &mkp MB4   &mkp MB5        &mkp MCLK  &msc SCRL_UP     &kp RC(B)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RC(N)  &kp PAGE_DOWN     &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &none      &none
-                                    &win_l0    &none            &kp ENTER                                                                 &kp ENTER  &kp INT_MUHENKAN  &kp INT_HENKAN
+&kp ESC  &kp HOME   &kp DEL         &kp UP     &kp BACKSPACE           &kp END                                  &mmv MOVE_UP                     &mkp LCLK  &kp PG_UP         &kp UP_ARROW        &kp BACKSPACE  &none      &kp BSPC
+&trans   &kp RC(A)  &kp LEFT_ARROW  &kp DOWN   &kp RIGHT_ARROW         &kp ENTER                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME   &kp LEFT          &kp DOWN            &kp RIGHT      &kp ENTER  &kp END
+&trans   &mkp MB4   &mkp MB5        &mkp LCLK  &mouse_click MCLK RCLK  &kp RC(B)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RC(N)  &kp PAGE_DOWN     &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &none      &none
+                                    &win_l0    &none                   &kp ENTER                                                                 &kp ENTER  &kp INT_MUHENKAN  &kp INT_HENKAN
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -394,10 +394,10 @@
         SYSTEM_LAYER {
             display-name = "SYSTEM";
             bindings = <
-&none  &soft_off     &none         &bootloader   &sys_reset    &bt BT_CLR_ALL                       &none         &sys_reset       &none            &none            &kp LC(V)        &rgb_ug RGB_OFF  &rgb_ug RGB_ON
-&none  &bt_sd 0    &bt_sd 1  &bt_sd 2  &bt_sd 3 &bt_sd 4       &none  &none  &none  &bootloader      &none            &none            &soft_off        &rgb_ug RGB_SPI  &rgb_ug RGB_BRI
-&none  &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &bt BT_CLR      &kp C_MUTE           &none         &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD
-                                    &none         &none         &to_l0_off                                         &to_l0_off       &none            &none
+&none  &soft_off     &none         &bootloader   &sys_reset  &bt BT_CLR_ALL                       &none         &sys_reset       &none            &none            &kp LC(V)        &rgb_ug RGB_OFF  &rgb_ug RGB_ON
+&none  &bt_sd 0      &bt_sd 1      &bt_sd 2      &bt_sd 3    &bt_sd 4                      &none  &none  &none  &bootloader      &none            &none            &soft_off        &rgb_ug RGB_SPI  &rgb_ug RGB_BRI
+&none  &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none       &bt BT_CLR      &kp C_MUTE           &none         &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD
+                                   &none         &none       &to_l0_off                                         &to_l0_off       &none            &none
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -418,7 +418,7 @@
         GameSub {
             display-name = "G_NUM";
             bindings = <
-&kp ESC    &kp N2  &kp NUMBER_3  &trans  &kp NUMBER_4  &kp Y                     &trans          &trans     &trans               &trans          &kp BACKSPACE  &trans     &trans
+&kp ESC    &kp N2  &kp NUMBER_3  &trans  &kp NUMBER_4  &kp Y                     &trans          &kp F12    &trans               &trans          &kp BACKSPACE  &trans     &trans
 &kp LCTRL  &kp N1  &trans        &trans  &trans        &kp H             &trans  &trans  &trans  &trans     &trans               &trans          &trans         &kp ENTER  &trans
 &trans     &trans  &kp N7        &kp N8  &kp N9        &kp N0  &trans            &trans          &trans     &trans               &trans          &trans         &trans     &none
                                  &trans  &trans        &trans                                    &kp ENTER  &kp INTERNATIONAL_5  &kp INT_HENKAN
