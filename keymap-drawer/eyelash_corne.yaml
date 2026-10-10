@@ -247,11 +247,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   GAME:
   - $$mdi:keyboard-tab$$
+  - U
   - Q
   - W
   - E
   - R
-  - T
   - $$mdi:arrow-up-bold$$
   - Y
   - U
@@ -260,11 +260,11 @@ layers:
   - P
   - '@'
   - $$mdi:keyboard-esc$$
+  - J
   - A
   - S
   - D
   - F
-  - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -275,11 +275,11 @@ layers:
   - {t: ;, s: ':'}
   - ':'
   - $$mdi:apple-keyboard-shift$$
+  - M
   - Z
   - X
   - C
   - V
-  - B
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - N
@@ -323,12 +323,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '6'
+  - {t: '5', s: '%'}
+  - N
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
