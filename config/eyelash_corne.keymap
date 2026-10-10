@@ -418,9 +418,9 @@
         GameSub {
             display-name = "G_NUM";
             bindings = <
-&kp ESC       &kp N2  &kp NUMBER_3  &trans        &kp NUMBER_4  &kp Y                     &trans          &kp F12    &trans               &trans          &kp BACKSPACE  &trans     &trans
-&kp LCTRL     &kp N1  &trans        &trans        &trans        &kp H             &trans  &trans  &trans  &trans     &trans               &trans          &trans         &kp ENTER  &trans
-&kp CAPSLOCK  &trans  &kp N7        &kp NUMBER_6  &kp N5        &kp N   &trans            &trans          &trans     &trans               &trans          &trans         &trans     &none
+&kp ESC       &kp N2  &kp NUMBER_3  &trans        &kp NUMBER_4  &kp T                     &trans          &kp F12    &trans               &trans          &kp BACKSPACE  &trans     &trans
+&kp LCTRL     &kp N1  &trans        &trans        &trans        &kp G             &trans  &trans  &trans  &trans     &trans               &trans          &trans         &kp ENTER  &trans
+&kp CAPSLOCK  &trans  &kp N7        &kp NUMBER_6  &kp N5        &kp B   &trans            &trans          &trans     &trans               &trans          &trans         &trans     &none
                                     &trans        &trans        &trans                                    &kp ENTER  &kp INTERNATIONAL_5  &kp INT_HENKAN
             >;
 
