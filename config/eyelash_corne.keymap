@@ -338,6 +338,11 @@
             key-positions = <15 16>;
             layers = <0>;
         };
+
+        Combo_FJ_Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <17 23>;
+        };
     };
 
     keymap {
