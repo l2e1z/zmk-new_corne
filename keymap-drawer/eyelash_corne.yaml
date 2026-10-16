@@ -613,7 +613,7 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
 - p: [14, 15]
-  k: Ctl+Sft+$$mdi:arrow-left-bold$$
+  k: {t: '-', s: _}
   l: [QWERTY]
 - p: [15, 16]
   k: Sft+Ctl+$$mdi:arrow-right-bold$$
