@@ -81,8 +81,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB4'
   - '&mkp MB5'
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:pan-up$$
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:mouse-right-click-outline$$', h: '$$mdi:mouse-scroll-wheel$$'}
   - Ctl+B
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -247,11 +247,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   GAME:
   - $$mdi:keyboard-tab$$
+  - U
   - Q
   - W
   - E
   - R
-  - T
   - $$mdi:arrow-up-bold$$
   - Y
   - U
@@ -260,11 +260,11 @@ layers:
   - P
   - '@'
   - $$mdi:keyboard-esc$$
+  - J
   - A
   - S
   - D
   - F
-  - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -275,11 +275,11 @@ layers:
   - {t: ;, s: ':'}
   - ':'
   - $$mdi:apple-keyboard-shift$$
+  - M
   - Z
   - X
   - C
   - V
-  - B
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - N
@@ -300,9 +300,9 @@ layers:
   - '3'
   - {t: '$$mdi:transfer$$', type: trans}
   - '4'
-  - Y
+  - T
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -313,7 +313,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - H
+  - G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -323,12 +323,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '6'
+  - {t: '5', s: '%'}
+  - B
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -612,9 +612,5 @@ combos:
 - p: [9, 10]
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
-- p: [14, 15]
-  k: Ctl+Sft+$$mdi:arrow-left-bold$$
-  l: [QWERTY]
-- p: [15, 16]
-  k: Sft+Ctl+$$mdi:arrow-right-bold$$
-  l: [QWERTY]
+- p: [17, 23]
+  k: {t: '-', s: _}
