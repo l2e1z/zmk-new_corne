@@ -181,6 +181,16 @@
             tapping-term-ms = <200>;
         };
 
+        recent_key_yen: recent_key_yen {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1>;
+            require-prior-idle-ms = <1000>;
+            bindings = <&st_toL9_dt_toL8_tt_toL10>, <&kp>;
+        };
+        
+
         // 既存の &lt の挙動自体をホールド優先に上書き
 
         lt: layer_tap {
