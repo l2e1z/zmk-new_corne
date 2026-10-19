@@ -189,7 +189,6 @@
             require-prior-idle-ms = <1000>;
             bindings = <&st_toL9_dt_toL8_tt_toL10>, <&kp>;
         };
-        
 
         // 既存の &lt の挙動自体をホールド優先に上書き
 
@@ -349,10 +348,10 @@
         DEFAULT_LAYER {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &q_shift_ctrl_altf4        &kp W  &kp E         &kp R  &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U        &win_i                     &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL       &a_shift_ctrl_select_line  &kp S  &kp D         &kp F  &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &win_j       &win_k                     &win_l   &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                  &kp DOT  &kp FSLH  &lt 8 INT_YEN
-                                                  &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 2 SPACE  &st_toL9_dt_toL8_tt_toL10
+&kp TAB         &q_shift_ctrl_altf4        &kp W  &kp E         &kp R  &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U        &win_i                   &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &a_shift_ctrl_select_line  &kp S  &kp D         &kp F  &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &win_j       &win_k                   &win_l   &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z                      &kp X  &kp C         &kp V  &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                &kp DOT  &kp FSLH  &lt 8 INT_YEN
+                                                  &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 2 SPACE  &recent_key_yen 0 MINUS
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
