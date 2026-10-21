@@ -487,5 +487,17 @@
 
             label = "Tenkey";
         };
+
+        iPad_LAYER {
+            display-name = "iPad";
+            bindings = <
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U        &win_i                   &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &win_j       &win_k                   &win_l   &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                &kp DOT  &kp FSLH  &lt 8 INT_YEN
+                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 2 SPACE  &recent_key_yen 0 MINUS
+            >;
+
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
     };
 };
