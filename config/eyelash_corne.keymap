@@ -340,6 +340,11 @@
             bindings = <&kp MINUS>;
             key-positions = <17 23>;
         };
+
+        Combo_HK_Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <22 24>;
+        };
     };
 
     keymap {
