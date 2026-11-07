@@ -665,3 +665,9 @@ combos:
   k: {t: '-', s: _}
 - p: [22, 24]
   k: {t: '-', s: _}
+- p: [17, 16]
+  k: LANG2
+  l: [iPad]
+- p: [23, 24]
+  k: LANG1
+  l: [iPad]
