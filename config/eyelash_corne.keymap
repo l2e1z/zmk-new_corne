@@ -345,6 +345,18 @@
             bindings = <&kp MINUS>;
             key-positions = <22 24>;
         };
+
+        Combo_Eisu_forApple {
+            bindings = <&kp LANG2>;
+            key-positions = <17 16>;
+            layers = <12>;
+        };
+
+        Combo_Kana_forApple {
+            bindings = <&kp LANG1>;
+            key-positions = <23 24>;
+            layers = <12>;
+        };
     };
 
     keymap {
