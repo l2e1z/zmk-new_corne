@@ -588,7 +588,56 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - '&to_l0_off'
-  iPad:
+  MacDefault:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - Y
+  - U
+  - {t: I, s: '$$mdi:arrow-up-bold$$'}
+  - O
+  - P
+  - {t: '[', s: '{'}
+  - $$mdi:apple-keyboard-control$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - H
+  - {t: J, s: '$$mdi:arrow-left-bold$$'}
+  - {t: K, s: '$$mdi:arrow-down-bold$$'}
+  - {t: L, s: '$$mdi:arrow-right-bold$$'}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: INT YEN, h: Mod}
+  - $$mdi:apple-keyboard-command$$
+  - MacMove
+  - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
+  - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
+  - {t: '$$mdi:keyboard-space$$', h: MacMove}
+  - {t: '-', h: '&st_toL9_dt_toL8_tt_toL10', s: _}
+  MacMove:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -632,11 +681,60 @@ layers:
   - {t: /, s: '?'}
   - {t: INT YEN, h: Mod}
   - $$mdi:apple-keyboard-option$$
-  - MOVE
+  - {t: MacDefault, type: held}
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
   - {t: '$$mdi:keyboard-space$$', h: Fn&NUM}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL, type: held alternate}
   - {t: '-', h: '&st_toL9_dt_toL8_tt_toL10', s: _}
+  MacSymbol:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+7, s: Sft+&}
+  - {t: '2', s: '@'}
+  - _
+  - {t: 'Sft+[', s: 'Sft+{'}
+  - {t: Sft+=, s: Sft++}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '=', s: +}
+  - Sft+INTERNATIONAL 1
+  - {t: '-', s: _}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '%'
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+6, s: Sft+^}
+  - '#'
+  - $
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: ']', s: '}'}
+  - {t: Sft+8, s: Sft+*}
+  - <
+  - '>'
+  - {t: Sft+9, s: Sft+(}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '!'
+  - '?'
+  - INTERNATIONAL 3
+  - {t: \, s: '|'}
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - _
+  - +
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - Sft+)
+  - INTERNATIONAL 1
+  - INT YEN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [0, 13, 28, 43]
   k: Sft+Ctl+$$mdi:keyboard-esc$$
@@ -667,7 +765,7 @@ combos:
   k: {t: '-', s: _}
 - p: [17, 16]
   k: LANG2
-  l: [iPad]
+  l: [MacDefault]
 - p: [23, 24]
   k: LANG1
-  l: [iPad]
+  l: [MacDefault]
