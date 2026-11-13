@@ -505,13 +505,37 @@
             label = "Tenkey";
         };
 
-        iPad_LAYER {
-            display-name = "iPad";
+        MAC_DEFAULT {
+            display-name = "MacDefault";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U        &win_i                   &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &win_j       &win_k                   &win_l   &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                &kp DOT  &kp FSLH  &lt 8 INT_YEN
-                              &kp LEFT_ALT  &mo 1  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 2 SPACE  &recent_key_yen 0 MINUS
+&kp TAB         &kp Q  &kp W  &kp E             &kp R   &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U         &win_i                   &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F   &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &win_j        &win_k                   &win_l   &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V   &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M         &kp COMMA                &kp DOT  &kp FSLH  &lt 8 INT_YEN
+                              &kp LEFT_COMMAND  &mo 13  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 13 SPACE  &recent_key_yen 0 MINUS
+            >;
+
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
+
+        MAC_MOVE {
+            display-name = "MacMove";
+            bindings = <
+&kp TAB         &kp Q  &kp W  &kp E         &kp R   &kp T                                      &mmv MOVE_UP                             &kp Y        &kp U        &win_i                   &kp O    &kp P     &kp LEFT_BRACKET
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F   &kp G                      &mmv MOVE_LEFT  &mouse_click RCLK LCLK  &mmv MOVE_RIGHT  &kp H        &win_j       &win_k                   &win_l   &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V   &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                           &kp N        &kp M        &kp COMMA                &kp DOT  &kp FSLH  &lt 8 INT_YEN
+                              &kp LEFT_ALT  &mo 12  &lt 3 SPACE                                                                         &lt 3 SPACE  &lt 2 SPACE  &recent_key_yen 0 MINUS
+            >;
+
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
+
+        MAC_SYMBOL {
+            display-name = "MacSymbol";
+            bindings = <
+&trans  &kp LS(N7)  &kp N2    &kp UNDER     &kp LS(LEFT_BRACKET)  &kp LS(EQUAL)                                    &mmv MOVE_UP                     &kp EQUAL  &kp LS(INTERNATIONAL_1)  &kp MINUS              &none                      &kp PERCENT          &kp BSPC
+&trans  &kp LS(N6)  &kp HASH  &kp DOLLAR    &none                 &kp RIGHT_BRACKET                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RBKT   &kp LS(N8)               &kp LESS_THAN          &kp GREATER_THAN           &kp LS(N9)           &kp RIGHT_BRACKET
+&trans  &none       &kp EXCL  &kp QUESTION  &kp INTERNATIONAL_3   &kp BACKSLASH      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS                 &kp LS(RIGHT_BRACKET)  &kp LS(RIGHT_PARENTHESIS)  &kp INTERNATIONAL_1  &kp INT_YEN
+                              &trans        &trans                &kp SPACE                                                                         &kp RET    &trans                   &trans
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
