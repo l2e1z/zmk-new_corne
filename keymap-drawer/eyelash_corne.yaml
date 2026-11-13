@@ -430,7 +430,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&to_l0_off'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&to_l12_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+$$mdi:arrow-left-bold$$
