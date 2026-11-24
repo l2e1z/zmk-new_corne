@@ -84,7 +84,7 @@
 
         // レイヤー11(Mac)、LEDをOFFにする
 
-        to_l12_off: to_l11_off {
+        to_l11_off: to_l11_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 11 &rgb_ug RGB_OFF>;
