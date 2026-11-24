@@ -82,12 +82,12 @@
             bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON &to 11>;
         };
 
-        // レイヤー12(Mac)、LEDをOFFにする
+        // レイヤー11(Mac)、LEDをOFFにする
 
-        to_l12_off: to_l12_off {
+        to_l12_off: to_l11_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 12 &rgb_ug RGB_OFF>;
+            bindings = <&to 11 &rgb_ug RGB_OFF>;
         };
 
         /* 1. 一連のキー送信を行うマクロの定義 (行選択マクロ)*/
