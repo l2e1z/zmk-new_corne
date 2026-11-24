@@ -60,7 +60,7 @@
         to_l7_purple: to_l7_purple {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 8>;
+            bindings = <&to 7>;
 
             // <&macro_wait_time 1000>,
             // <&rgb_ug RGB_OFF>;
@@ -71,7 +71,7 @@
         to_l8_orange: to_l8_orange {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON &to 9>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(7, 100, 50) &rgb_ug RGB_ON &to 8>;
         };
 
         // 【追加】レイヤー10へ移動し、LEDをONにして水色にする
@@ -79,7 +79,7 @@
         to_l10_light_blue: to_l10_light_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON &to 11>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(180, 100, 50) &rgb_ug RGB_ON &to 10>;
         };
 
         // レイヤー11(Mac)、LEDをOFFにする
